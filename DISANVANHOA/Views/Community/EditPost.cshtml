@@ -1,0 +1,173 @@
+﻿@model DISANVANHOA.Models.EF.Post
+@{
+    ViewBag.Title = "Sửa Bài Viết";
+}
+
+<link rel="stylesheet" href="~/Content/assets/styles/single_styles.css" />
+<link rel="stylesheet" href="~/Content/assets/styles/single_responsive.css" />
+<link href="~/Content/assets/styles/suacongdong.css" rel="stylesheet" />
+
+<style>
+    .edit-post-box {
+        background: #fff;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        margin-top: 25px;
+        margin-bottom: 40px;
+    }
+
+    /* Media cũ */
+    .preview-old-box .old-item {
+        display: inline-block;
+        margin: 8px;
+        text-align: center;
+    }
+
+    .preview-old-box img,
+    .preview-old-box video {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 10px;
+        display: block;
+    }
+
+    .preview-old-box label {
+        display: block;
+        margin-top: 5px;
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+    /* Media mới preview */
+    #previewMedia img,
+    #previewMedia video {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin: 5px;
+    }
+
+    .file-upload-label {
+        background: #007bff;
+        color: #fff;
+        padding: 8px 14px;
+        border-radius: 8px;
+        cursor: pointer;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+</style>
+
+<div class="container news_section_container">
+    <div class="edit-post-box">
+
+        <h3>Sửa Bài Viết</h3>
+
+        @using (Html.BeginForm("EditPost", "Community", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.HiddenFor(m => m.Id)
+            <input type="hidden" name="password" value="@Request.QueryString["password"]" />
+
+            <!-- Tác giả -->
+            <div class="mb-3">
+                <label>Tác giả</label>
+                <input type="text" class="form-control" value="@Model.Author" disabled />
+            </div>
+
+            <!-- Nội dung -->
+            <div class="mb-3">
+                <label>Nội dung</label>
+                <textarea name="content" class="form-control" rows="4" required>@Model.Content</textarea>
+            </div>
+
+            <!-- MEDIA CŨ -->
+            <div class="mb-3">
+                <label><b>Media hiện tại:</b></label>
+                <div class="preview-old-box">
+                    @if (Model.MediaFiles != null && Model.MediaFiles.Any())
+                    {
+                        foreach (var file in Model.MediaFiles)
+                        {
+                            <div class="old-item">
+                                @if (file.FileType == "image")
+                                {
+                                    <img src="@file.FilePath" />
+                                }
+                                else
+                                {
+                                    <video src="@file.FilePath" controls></video>
+                                }
+                                <label>
+                                    <input type="checkbox" name="deleteOldMedia" value="@file.Id" /> Xóa
+                                </label>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        <p><i>Không có media</i></p>
+                    }
+                </div>
+            </div>
+
+            <!-- MEDIA MỚI -->
+            <div class="mb-3">
+                <label><b>Thêm media mới</b></label>
+
+                <label for="mediaInput" class="file-upload-label">
+                    <i class="fa fa-image"></i> Chọn tệp
+                </label>
+
+                <input type="file" name="media" id="mediaInput" accept="image/*,video/*" multiple style="display:none;" />
+
+                <div id="previewMedia"></div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Lưu thay đổi</button>
+            <a href="@Url.Action("Index", "Community")" class="btn btn-secondary">Hủy</a>
+        }
+    </div>
+</div>
+
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            // Xem trước media mới
+            $("#mediaInput").on("change", function () {
+                let files = this.files;
+                let preview = $("#previewMedia");
+
+                preview.html(""); // xóa preview cũ
+
+                if (!files.length) return;
+
+                Array.from(files).forEach(file => {
+                    let ext = file.name.split('.').pop().toLowerCase();
+                    let media;
+
+                    if (["jpg", "jpeg", "png", "gif", "webp"].includes(ext)) {
+                        media = $("<img>").attr("src", URL.createObjectURL(file));
+                    }
+                    else if (["mp4", "webm", "mov", "ogg"].includes(ext)) {
+                        media = $("<video controls>").attr("src", URL.createObjectURL(file));
+                    }
+
+                    if (media) {
+                        media.css({
+                            width: "120px",
+                            height: "120px",
+                            objectFit: "cover",
+                            borderRadius: "10px",
+                            margin: "5px"
+                        });
+                        preview.append(media);
+                    }
+                });
+            });
+        });
+    </script>
+}

@@ -1,0 +1,55 @@
+﻿.navbar_user {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+    /* Icon */
+    .search-box a {
+        font-size: 18px;
+        color: #333;
+        padding: 8px;
+        z-index: 3;
+    }
+
+/* Input */
+.search-input {
+    position: absolute;
+    left: 42px; /* bên trái icon */
+    width: 0;
+    opacity: 0;
+    padding: 8px 14px;
+    border: 1px solid #e5e5e5;
+    border-radius: 999px;
+    outline: none;
+    font-size: 14px;
+    background: #fff;
+    transition: all 0.3s ease;
+    /* Shopee-style */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+/* Khi mở */
+.search-box.active .search-input {
+    width: 200px;
+    opacity: 1;
+}
+
+/* 📱 Mobile */
+@media (max-width: 768px) {
+    .search-box.active .search-input {
+        position: fixed;
+        top: 60px; /* dưới header */
+        left: 10px;
+        right: 10px;
+        width: auto;
+        z-index: 999;
+    }
+}

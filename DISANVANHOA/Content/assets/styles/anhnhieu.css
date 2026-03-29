@@ -1,0 +1,74 @@
+﻿.fb-lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 999999;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn .25s ease;
+}
+
+.fb-lb-content {
+    position: relative;
+    width: 94%;
+    max-width: 1300px;
+    max-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fb-lb-media img, .fb-lb-media video {
+    max-width: 100%;
+    max-height: 88vh;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(255,255,255,0.2);
+    animation: lbZoom .25s ease;
+}
+
+.fb-lb-close, .fb-lb-prev, .fb-lb-next {
+    position: absolute;
+    background: rgba(0,0,0,0.55);
+    color: #fff;
+    border: none;
+    padding: 12px 18px;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+    transition: 0.15s ease;
+}
+
+.fb-lb-close {
+    top: 20px;
+    right: 20px;
+}
+
+.fb-lb-prev {
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+
+.fb-lb-next {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+    .fb-lb-close:hover, .fb-lb-prev:hover, .fb-lb-next:hover {
+        background: rgba(255,255,255,0.25);
+    }
+
+@keyframes lbZoom {
+    from {
+        transform: scale(.92);
+        opacity: .4;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,547 @@
+﻿:root {
+    --cute-bg: #ffffff;
+    --cute-pink: #ff9ad5;
+    --cute-pink-dark: #ff71c8;
+    --cute-blue: #9ad8ff;
+    --cute-green: #9affc3;
+    --cute-yellow: #ffe89a;
+    --soft-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    --soft-radius: 16px;
+}
+
+body {
+    background: var(--cute-bg);
+    font-family: 'Comic Sans MS', 'Chalkboard SE', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ==========================
+   CREATE POST CARD
+   ========================== */
+.create-post-card {
+    background: #ffffff;
+    border-radius: var(--soft-radius);
+    padding: 18px;
+    box-shadow: var(--soft-shadow);
+    margin-bottom: 20px;
+    transition: 0.3s ease;
+    animation: floatIn 0.5s ease;
+}
+
+    .create-post-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+
+.create-post-header {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.create-post-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--cute-pink), var(--cute-blue));
+    box-shadow: var(--soft-shadow);
+}
+
+.post-input {
+    width: 100%;
+    min-height: 75px;
+    border: none;
+    resize: none;
+    outline: none;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 14px;
+    background: #fff2fa;
+    transition: 0.25s ease;
+}
+
+    .post-input:focus {
+        background: #ffe6f7;
+        box-shadow: 0 0 0 3px rgba(255,154,213,0.25);
+    }
+
+/* ==========================
+   ACTION BAR
+   ========================== */
+.post-action-bar {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+}
+
+.action-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    border-radius: 14px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    background: #ffe8f7;
+    color: #444;
+    transition: 0.2s ease;
+    box-shadow: var(--soft-shadow);
+}
+
+    .action-btn:hover {
+        background: #ffd5f1;
+        transform: translateY(-2px);
+    }
+/* ==========================
+   EMOJI PICKER SCROLLABLE
+   ========================== */
+.emoji-picker {
+    position: absolute;
+    z-index: 1050;
+    background: #ffffff;
+    border-radius: var(--soft-radius);
+    padding: 10px;
+    width: 320px;
+    max-height: 200px; /* Giới hạn chiều cao */
+    display: none;
+    gap: 8px;
+    flex-wrap: wrap;
+    overflow-y: auto; /* Scroll dọc khi vượt quá */
+    box-shadow: var(--soft-shadow);
+    animation: fadeIn 0.2s ease;
+}
+
+    /* Ẩn scrollbar nhưng vẫn scroll được */
+    .emoji-picker::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    .emoji-picker::-webkit-scrollbar-thumb {
+        background: rgba(0,0,0,0.15);
+        border-radius: 3px;
+    }
+
+    /* Emoji style */
+    .emoji-picker .emoji {
+        font-size: 22px;
+        cursor: pointer;
+        padding: 6px;
+        border-radius: 10px;
+        transition: 0.2s ease;
+    }
+
+        .emoji-picker .emoji:hover {
+            background: #ffe3f7;
+            transform: scale(1.3);
+        }
+
+/* Responsive cho mobile: scroll ngang */
+@media (max-width: 480px) {
+    .emoji-picker {
+        width: 90vw;
+        max-height: 120px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        flex-wrap: nowrap;
+    }
+
+        .emoji-picker .emoji {
+            flex: 0 0 auto; /* cho phép scroll ngang từng emoji */
+        }
+}
+
+
+/* ==========================
+   POST CARD (FEED)
+   ========================== */
+.post-card {
+    background: #ffffff;
+    border-radius: var(--soft-radius);
+    padding: 14px;
+    margin-bottom: 20px;
+    box-shadow: var(--soft-shadow);
+    animation: floatIn 0.5s ease;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-body p {
+    white-space: pre-wrap;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #444;
+}
+
+/* ==========================
+   MEDIA GRID & PREVIEW
+   ========================== */
+.post-media-grid,
+#previewMedia {
+    display: grid;
+    gap: 8px;
+    margin-top: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+    .post-media-grid .media-item,
+    #previewMedia .preview-wrapper {
+        position: relative;
+        width: 100%;
+        padding-top: 100%;
+        border-radius: 12px;
+        overflow: hidden;
+        background: #f3f3f3;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        cursor: pointer;
+    }
+
+        .post-media-grid .media-item img,
+        .post-media-grid .media-item video,
+        #previewMedia img,
+        #previewMedia video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+.media-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    border-radius: 12px;
+    pointer-events: none;
+}
+
+/* ==========================
+   COMMENT SECTION
+   ========================== */
+.comment-box {
+    background: #fff7fc;
+    padding: 12px;
+    border-radius: 14px;
+    margin-top: 10px;
+    box-shadow: var(--soft-shadow);
+}
+
+.comment-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #ffd3f1;
+    outline: none;
+    background: #ffffff;
+    transition: 0.25s;
+}
+
+    .comment-input:focus {
+        border-color: #ff9ad5;
+        box-shadow: 0 0 0 3px rgba(255,154,213,0.25);
+    }
+
+.comment-item {
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    box-shadow: var(--soft-shadow);
+    animation: fadeIn 0.3s ease;
+}
+
+/* ==========================
+   BUTTON ĐĂNG BÀI
+   ========================== */
+#btnSubmitPost {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 105px;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 14px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(135deg, #ff9ad5, #ff71c8);
+    color: #fff;
+    box-shadow: var(--soft-shadow);
+    transition: all 0.25s ease;
+    min-width: 160px;
+}
+
+    #btnSubmitPost:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        background: linear-gradient(135deg, #ff71c8, #ff9ad5);
+    }
+
+    #btnSubmitPost:active {
+        transform: translateY(1px);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    #btnSubmitPost span {
+        display: inline-block;
+    }
+
+    #btnSubmitPost svg {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        stroke: #fff;
+        transition: transform 0.25s ease;
+    }
+
+    #btnSubmitPost:hover svg {
+        transform: translateX(4px);
+    }
+
+/* ==========================
+   LIGHTBOX FACEBOOK STYLE
+   ========================== */
+.fb-lightbox {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.9);
+    z-index: 999999;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+}
+
+    .fb-lightbox.show {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+.fb-lb-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    background: #000;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.fb-lb-media img,
+.fb-lb-media video {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(255,255,255,0.2);
+    animation: lbZoom 0.25s ease;
+}
+
+@media (max-width: 1024px) {
+    .fb-lb-media img,
+    .fb-lb-media video {
+        width: 80vw;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .fb-lb-media img,
+    .fb-lb-media video {
+        width: 90vw;
+        height: auto;
+    }
+}
+
+.fb-lb-close,
+.fb-lb-prev,
+.fb-lb-next {
+    display: none;
+    position: absolute;
+    background: rgba(0,0,0,0.55);
+    color: #fff;
+    border: none;
+    padding: 12px 18px;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+    transition: 0.15s ease;
+    z-index: 10;
+}
+
+.fb-lightbox.show .fb-lb-close,
+.fb-lightbox.show .fb-lb-prev,
+.fb-lightbox.show .fb-lb-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fb-lb-close {
+    top: 20px;
+    right: 20px;
+}
+
+.fb-lb-prev {
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+
+.fb-lb-next {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+    .fb-lb-close:hover,
+    .fb-lb-prev:hover,
+    .fb-lb-next:hover {
+        background: rgba(255,255,255,0.25);
+    }
+
+/* ==========================
+   ANIMATIONS
+   ========================== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floatIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes lbZoom {
+    from {
+        transform: scale(0.92);
+        opacity: 0.4;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* ==========================
+   RESPONSIVE
+   ========================== */
+@media (max-width: 768px) {
+    .create-post-card, .post-card {
+        padding: 12px;
+    }
+
+    .post-input {
+        min-height: 60px;
+    }
+
+    .action-btn {
+        flex: 1;
+        justify-content: center;
+    }
+
+    .emoji-picker {
+        width: 260px;
+    }
+
+    .create-post-avatar {
+        width: 40px;
+        height: 40px;
+    }
+
+    #previewMedia img, #previewMedia video {
+        max-height: 240px;
+    }
+
+    .fb-lb-content {
+        width: 95%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .fb-lb-media {
+        max-height: 70vh;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .post-input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .action-btn {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+
+    .emoji-picker {
+        width: 220px;
+    }
+
+    .fb-lb-media {
+        max-height: 60vh;
+        height: auto;
+    }
+
+    #btnSubmitPost {
+        padding: 10px 120px;
+        font-size: 14px;
+        min-width: 130px;
+    }
+
+        #btnSubmitPost svg {
+            width: 18px;
+            height: 18px;
+        }
+}
+
+/* Ẩn input file gốc */
+#mediaInput {
+    display: none;
+}
+
+.news_section_container {
+    margin-top: 155px;
+}

@@ -1,0 +1,24 @@
+﻿@model IEnumerable<DISANVANHOA.Models.EF.DocType>
+@if (Model != null && Model.Any())
+{
+    <ul class="sidebar_categories">
+        @foreach (var item in Model)
+        {
+            if (ViewBag.CateId == item.Id)
+            {
+                <li class="active"><a href="/loai-hinh-di-san/@item.Alias-@(item.Id)"><span><i class="fa fa-angle-double-right" aria-hidden="true"></i></span>@item.Title</a></li>
+            }
+            else
+            {
+                <li><a href="/loai-hinh-di-san/@item.Alias-@(item.Id)">@item.Title</a></li>
+            }
+        }
+    </ul>
+        }
+
+        
+        @*<li><a href="#">Accessories</a></li>
+        <li><a href="#">New Arrivals</a></li>
+        <li><a href="#">Collection</a></li>
+        <li><a href="#">Shop</a></li>*@
+    

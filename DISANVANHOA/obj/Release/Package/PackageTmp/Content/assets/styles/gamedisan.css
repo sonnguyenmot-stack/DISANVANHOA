@@ -1,0 +1,159 @@
+﻿
+#cardsAreaMatch {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.cardMatch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    user-select: none;
+    font-weight: bold;
+    text-align: center;
+    background-color: #fff;
+    min-height: 80px;
+    width: 100%;
+}
+
+    /* Hover bình thường */
+    .cardMatch:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        background-color: #f0f8ff;
+    }
+
+    .cardMatch img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    .cardMatch.matched {
+        border-color: #28a745 !important;
+        background-color: #d4edda !important;
+        color: #155724;
+    }
+
+    .cardMatch.active {
+        border-color: #007bff;
+        background-color: #cce5ff;
+    }
+
+#timerMatch {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#progressBarMatch {
+    height: 20px;
+    background-color: #007bff;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* ==========================
+   START AREA GAME - Cute Style
+   ========================== */
+#startAreaMatch {
+    text-align: center;
+    margin: 50px auto;
+    padding: 40px 20px;
+    max-width: 450px;
+    background: linear-gradient(135deg, #ffefd5, #d0f0fd); /* nền pastel */
+    border-radius: 30px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    #startAreaMatch:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Tiêu đề cute */
+    #startAreaMatch h2 {
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+        font-size: 1.8rem;
+        color: #ff6f91;
+        margin-bottom: 25px;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    }
+
+/* Nút bắt đầu cute */
+#startBtnMatch {
+    background: linear-gradient(135deg, #ff9ad5, #ff71c8);
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px 35px;
+    border-radius: 50px;
+    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.4);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+    #startBtnMatch:hover {
+        background: linear-gradient(135deg, #ff71c8, #ff9ad5);
+        transform: scale(1.1);
+        box-shadow: 0 12px 25px rgba(255, 105, 180, 0.5);
+    }
+
+/* Responsive cho điện thoại */
+@media (max-width: 600px) {
+    #startAreaMatch {
+        margin: 30px 15px;
+        padding: 30px 15px;
+    }
+
+        #startAreaMatch h2 {
+            font-size: 1.5rem;
+        }
+
+    #startBtnMatch {
+        font-size: 1rem;
+        padding: 10px 25px;
+    }
+}
+/* Icon cute bên phải nút */
+.cute-right {
+    font-size: 2rem;
+    animation: bounce 1s infinite alternate;
+    transform-origin: bottom center;
+}
+
+/* Hiệu ứng bounce cute */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width:600px) {
+    .cute-right {
+        font-size: 1.5rem;
+    }
+}

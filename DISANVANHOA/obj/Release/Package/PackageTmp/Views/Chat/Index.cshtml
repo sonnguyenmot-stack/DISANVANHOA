@@ -1,0 +1,194 @@
+﻿
+@{
+    ViewBag.Title = "Trợ Lý AI";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/assets/styles/chatai.css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<style>
+    .news_section_container {
+        margin-top: 155px;
+    }
+</style>
+<div class="container news_section_container">
+    <div class="chat-container">
+        <h3>AI Di Sản Tuyên Quang</h3>
+
+        <div id="chatBox" class="chat-box"></div>
+
+        <div class="chat-input-wrapper">
+            <div id="filePreviewArea" class="file-preview-area"></div>
+            <div class="chat-input">
+                <input id="txtQuestion" placeholder="Nhập câu hỏi..." />
+                <label class="upload-btn">
+                    📎
+                    <input type="file" id="fileInput" multiple hidden />
+                </label>
+                <button id="btnSend">Gửi</button>
+                <button id="btnStop" style="display:none;">⏹ Dừng</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <script>
+let uploadedFiles = [];
+let typingPaused = false;
+let currentAIWrapper = null;
+let chatHistory = "";
+
+// Thêm message vào chat
+function addMessage(text, type){
+    const wrapper = $('<div class="chat-message-wrapper"></div>');
+    const msg = $('<div class="chat-message"></div>').addClass(type==="user"?"chat-user":"chat-gemini");
+    msg.html(text);
+    wrapper.append(msg);
+    $("#chatBox").append(wrapper).scrollTop($("#chatBox")[0].scrollHeight);
+    return wrapper;
+}
+
+// Thêm file (owner="user" hoặc "gemini")
+function addFiles(files, owner="user"){
+    return new Promise(resolve=>{
+        const filesWrapper = $('<div class="chat-files-wrapper"></div>');
+        let loadedCount=0;
+        files.forEach(f=>{
+            const div = $('<div class="chat-message"></div>').addClass(owner==="user"?"chat-user":"chat-gemini").css({'max-width':'60%'});
+            if(f.type.startsWith("image/")){
+                const reader = new FileReader();
+                reader.onload = e=>{
+                    div.append('<img src="'+e.target.result+'" style="max-width:200px; border-radius:10px; margin-top:5px"/>');
+                    filesWrapper.append(div);
+                    loadedCount++;
+                    if(loadedCount===files.length){ $("#chatBox").append(filesWrapper).scrollTop($("#chatBox")[0].scrollHeight); resolve(); }
+                }; reader.readAsDataURL(f);
+            } else {
+                div.text('📄 '+f.name);
+                filesWrapper.append(div);
+                loadedCount++;
+                if(loadedCount===files.length){ $("#chatBox").append(filesWrapper).scrollTop($("#chatBox")[0].scrollHeight); resolve(); }
+            }
+        });
+        if(files.length===0) resolve();
+    });
+}
+
+// Update preview
+function updateFilePreview(){
+    const area=$("#filePreviewArea"); area.empty();
+    uploadedFiles.forEach((f,i)=>{
+        if(f.type.startsWith("image/")){
+            const reader=new FileReader();
+            reader.onload=e=>{
+                area.append('<div class="file-item"><img src="'+e.target.result+'"/><span>'+f.name+'</span><span class="remove-file" data-index="'+i+'">x</span></div>');
+            }; reader.readAsDataURL(f);
+        } else {
+            area.append('<div class="file-item">📄 '+f.name+'<span class="remove-file" data-index="'+i+'">x</span></div>');
+        }
+    });
+}
+$(document).on('click','.remove-file',function(){ uploadedFiles.splice($(this).data('index'),1); updateFilePreview(); });
+$("#fileInput").on("change",function(){ uploadedFiles=Array.from(this.files); updateFilePreview(); });
+
+// Typewriter AI
+async function typeWriter(target, text, delay=15){
+    typingPaused=false;
+    for(let i=0;i<text.length;i++){
+        if(typingPaused){
+            await new Promise(r=>{
+                const interval=setInterval(()=>{
+                    if(!typingPaused){ clearInterval(interval); r(); }
+                },50);
+            });
+        }
+        target.append(text.charAt(i));
+        $("#chatBox").scrollTop($("#chatBox")[0].scrollHeight);
+        await new Promise(r=>setTimeout(r,delay));
+    }
+}
+
+// Bubble AI chấm nhảy với 3 chấm "..."
+function addTypingAI() {
+    const wrapper = addMessage('<div class="typing-dots"><span>.</span><span>.</span><span>.</span></div>', "gemini");
+    currentAIWrapper = wrapper;
+    $("#btnStop").show();
+    return wrapper;
+}
+
+// Hiển thị trả lời AI
+async function showAIResponse(wrapper,text){
+    wrapper.find('.chat-message').empty();
+    chatHistory += "\nAI: " + text;
+    await typeWriter(wrapper.find('.chat-message'), text);
+}
+
+// Gửi message
+async function sendMessage(){
+    const q=$("#txtQuestion").val().trim();
+    if(!q && uploadedFiles.length===0) return;
+
+    // Thêm message user vào chat
+    addMessage(q,"user");
+    chatHistory += "\nUser: " + q;
+
+    // Xóa trắng input
+    $("#txtQuestion").val("");
+
+    // Thêm file user (nếu có)
+    await addFiles(uploadedFiles,"user");
+
+    // Thêm bubble AI chấm nhảy
+    const aiWrapper = addTypingAI();
+
+    const formData = new FormData();
+    formData.append("question", q);
+    formData.append("chatHistory", chatHistory);
+    if(uploadedFiles.length>0) formData.append("file", uploadedFiles[0]);
+
+    try{
+        const data = await $.ajax({
+            url:"@Url.Action("Ask","Chat")",
+            type:"POST",
+            data: formData,
+            processData:false,
+            contentType:false
+        });
+
+        // Nếu AI trả file/ảnh
+        if(data.files && data.files.length>0) await addFiles(data.files,"gemini");
+
+        // Hiển thị trả lời AI
+        await showAIResponse(aiWrapper, data.answer);
+
+        // Reset file upload
+        uploadedFiles = [];
+        updateFilePreview();
+
+    }catch(xhr){
+        aiWrapper.find('.chat-message').text("Lỗi: "+xhr.status+" "+xhr.statusText);
+    }finally{
+        $("#txtQuestion").prop('disabled', false);
+        $("#btnSend").prop('disabled', false);
+        $("#btnStop").hide();
+    }
+}
+
+// Dừng AI
+$("#btnStop").click(function(){
+    typingPaused = true;
+    $(this).hide();
+    if(currentAIWrapper){
+        currentAIWrapper.find('.chat-message').append("<br><i>Đã dừng trả lời.</i>");
+        currentAIWrapper = null;
+    }
+});
+
+// Gửi khi click hoặc Enter
+$("#btnSend").click(sendMessage);
+$("#txtQuestion").keypress(e=>{ if(e.which===13 && !e.shiftKey){ e.preventDefault(); sendMessage(); } });
+
+    </script>
+
+

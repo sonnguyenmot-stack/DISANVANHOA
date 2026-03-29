@@ -1,0 +1,24 @@
+﻿
+/* Responsive table scroll */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+table th, table td {
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+/* Mobile card adjustments */
+@media (max-width: 576px) {
+    .card.mb-2 {
+        font-size: 0.9rem;
+    }
+
+        .card.mb-2 .btn {
+            padding: 0.25rem 0.5rem;
+            font-size: 0.75rem;
+        }
+}
+

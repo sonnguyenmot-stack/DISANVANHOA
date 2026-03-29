@@ -1,0 +1,158 @@
+﻿
+@* Partial View: Bong bóng chat mini *@
+
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+<link href="~/Content/assets/styles/bootstrap4/b1.css" rel="stylesheet" />
+
+<!-- Nút mở chat -->
+<button id="openChatBtnMini" class="chat-mini-btn">💬</button>
+
+<!-- Container chat mini -->
+<div id="bongBongChatMini" class="bongbong-chat-container" style="display:none;">
+    <div class="chat-header">
+        <span>AI Di Sản Tuyên Quang</span>
+        <button id="closeChatBtnMini">&times;</button>
+    </div>
+
+    <div id="chatBoxMini" class="chat-box">
+        <div class="chat-message ai-message">
+            <p>AI Di Sản Tuyên Quang xin chào!</p>
+        </div>
+    </div>
+
+    <form id="chatFormMini" class="chat-form" enctype="multipart/form-data">
+        <!-- FILE PREVIEW NẰM TRÊN TEXTAREA -->
+        <div id="filePreviewMini" class="file-preview-mini"></div>
+
+        <div class="input-row">
+            <textarea name="prompt" placeholder="Nhập câu hỏi..." rows="1"></textarea>
+            <label class="file-label" title="Tải ảnh/file">
+                📎
+                <input type="file" id="fileUploadMini" multiple hidden />
+            </label>
+            <button type="submit">➤</button>
+        </div>
+    </form>
+</div>
+
+<!-- Lời chào mini game -->
+<div id="chatGreeting" class="chat-greeting"></div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+<script>
+$(function(){
+    const chatContainer = $("#bongBongChatMini");
+    const chatBox = $("#chatBoxMini");
+    const form = $("#chatFormMini");
+    const fileInput = $("#fileUploadMini");
+    const filePreview = $("#filePreviewMini");
+    const chatGreeting = $("#chatGreeting");
+    let uploadedFiles = [];
+    let chatHistory = "";
+
+    // Mở / đóng chat
+    $("#openChatBtnMini").click(()=> chatContainer.fadeIn());
+    $("#closeChatBtnMini").click(()=> chatContainer.fadeOut());
+
+    // File preview
+    fileInput.on("change", function(){
+        uploadedFiles = Array.from(this.files);
+        updateFilePreview();
+        $(this).val('');
+    });
+    function updateFilePreview(){
+        filePreview.empty();
+        uploadedFiles.forEach((file,index)=>{
+            const item = $('<div class="preview-item"></div>');
+            if(file.type.startsWith("image/")){
+                const reader = new FileReader();
+                reader.onload = e => { item.append('<img src="'+e.target.result+'">'); item.append('<span class="file-name">'+file.name+'</span>'); }
+                reader.readAsDataURL(file);
+            } else { item.append('<span class="file-name">'+file.name+'</span>'); }
+            item.append('<div class="remove-file" data-index="'+index+'">×</div>');
+            filePreview.append(item);
+        });
+    }
+    $(document).on("click",".remove-file",function(){
+        uploadedFiles.splice($(this).data("index"),1);
+        updateFilePreview();
+    });
+
+    // Message
+    function addMessage(content,type="user"){
+        const wrapper = $('<div class="chat-message"></div>').addClass(type==="user"?"user-message":"ai-message");
+        if(type==="user" && uploadedFiles.length>0){
+            uploadedFiles.forEach(file=>{
+                if(file.type.startsWith("image/")){
+                    const reader = new FileReader();
+                    reader.onload = e=>{ wrapper.append('<img src="'+e.target.result+'">'); }
+                    reader.readAsDataURL(file);
+                } else { wrapper.append('<span class="file-name">'+file.name+'</span><br>'); }
+            });
+        }
+        wrapper.append(content);
+        chatBox.append(wrapper);
+        chatBox.scrollTop(chatBox[0].scrollHeight);
+        return wrapper;
+    }
+
+    function addTypingAI(){ return addMessage('<div class="ai-typing"><span></span><span></span><span></span></div>',"ai"); }
+    async function typeText(target,text,speed=18){
+        for(let i=0;i<text.length;i++){ target.append(text[i]); chatBox.scrollTop(chatBox[0].scrollHeight); await new Promise(r=>setTimeout(r,speed)); }
+        target.append("<br>");
+    }
+    async function showAIResponse(wrapper,text){
+        wrapper.empty();
+        const lines = text.split(/[\n\.!?]+/).filter(l=>l.trim());
+        for(const line of lines){ await typeText(wrapper,line.trim()); }
+    }
+    async function sendMessage(){
+        const q = form.find("textarea[name='prompt']").val().trim();
+        if(!q && uploadedFiles.length===0) return;
+        addMessage(q,"user");
+        chatHistory += "\nUser: "+q;
+        form.find("textarea").val('');
+        filePreview.empty();
+        const aiWrapper = addTypingAI();
+        const formData = new FormData();
+        formData.append("question",q);
+        formData.append("chatHistory",chatHistory);
+        if(uploadedFiles.length>0) formData.append("file",uploadedFiles[0]);
+        try{
+            const data = await $.ajax({ url:'@Url.Action("Ask","Chat")', type:"POST", data:formData, contentType:false, processData:false });
+            chatHistory += "\nAI: "+data.answer;
+            await showAIResponse(aiWrapper,data.answer);
+        }catch(err){ aiWrapper.text("⚠️ Lỗi khi gửi câu hỏi!"); }
+        uploadedFiles = [];
+    }
+    form.submit(e=>{ e.preventDefault(); sendMessage(); });
+    form.find("textarea").keydown(e=>{ if(e.key==="Enter" && !e.shiftKey){ e.preventDefault(); sendMessage(); } });
+
+    // Mini game greeting
+    function showGreetingEffect(){
+        chatGreeting.html('<span class="greeting-text">Chào bạn! 💖 Hãy nhắn thử nhé!</span>');
+        chatGreeting.css({opacity:1});
+        const effects = ["heart","star","bubble"];
+        for(let i=0;i<15;i++){
+            const type = effects[Math.floor(Math.random()*effects.length)];
+            const effect = $('<div class="greeting-effect '+type+'"></div>');
+            const size = Math.random()*12 + 10;
+            effect.css({ left: (Math.random()*80+10)+'%', width: type!=="bubble"? size+'px' : '12px', height: type!=="bubble"? size+'px' : '12px', fontSize: type!=="bubble"? size+'px' : '' });
+            chatGreeting.append(effect);
+            setTimeout(()=> effect.remove(), 5000);
+        }
+    }
+    setInterval(()=>{
+        if(!chatContainer.is(":visible")){
+            chatGreeting.fadeIn(500);
+            showGreetingEffect();
+            setTimeout(()=> chatGreeting.fadeOut(500), 5000);
+        }
+    }, 10000);
+});
+</script>

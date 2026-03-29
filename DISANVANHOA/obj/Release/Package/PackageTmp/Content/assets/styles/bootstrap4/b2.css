@@ -1,0 +1,322 @@
+﻿/* ============================================= */
+/* NÚT MỞ CHAT MINI - cute style                 */
+/* ============================================= */
+.chat-mini-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #f9f6ff, #e0d9ff);
+    border: 2px solid #bda9ff;
+    color: #7a4fff;
+    font-size: 28px;
+    box-shadow: 0 8px 18px rgba(122,79,255,0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: pulseGlow 2s infinite ease-in-out;
+    z-index: 99998;
+}
+
+    .chat-mini-btn:hover {
+        transform: scale(1.15) rotate(8deg);
+        box-shadow: 0 12px 25px rgba(122,79,255,0.4);
+    }
+
+/* Nhịp sáng */
+@keyframes pulseGlow {
+    0%, 100% {
+        box-shadow: 0 0 8px rgba(122,79,255,0.4);
+    }
+
+    50% {
+        box-shadow: 0 0 18px rgba(122,79,255,0.7);
+    }
+}
+
+/* ============================================= */
+/* CONTAINER CHAT MINI                          */
+/* ============================================= */
+.bongbong-chat-container {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 340px;
+    height: 480px;
+    background: #fff;
+    border-radius: 22px;
+    border: 2px solid #d1c8ff;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.15), inset 0 0 18px rgba(190,180,255,0.4);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    animation: popUp 0.4s ease-out forwards;
+    z-index: 99999;
+}
+
+/* Hiệu ứng pop mở */
+@keyframes popUp {
+    0% {
+        transform: scale(0.6) translateY(40px);
+        opacity: 0;
+    }
+
+    60% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* ============================================= */
+/* HEADER chat                                  */
+/* ============================================= */
+.chat-header {
+    background: linear-gradient(135deg, #b298ff, #d4c5ff);
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #c9b8ff;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+    .chat-header button {
+        background: transparent;
+        border: none;
+        font-size: 22px;
+        color: #fff;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+        .chat-header button:hover {
+            transform: rotate(90deg);
+        }
+
+/* ============================================= */
+/* CHAT BOX                                     */
+/* ============================================= */
+.chat-box {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background: #faf7ff;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+    .chat-box::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    .chat-box::-webkit-scrollbar-thumb {
+        background: #ccbaff;
+        border-radius: 20px;
+    }
+
+/* ============================================= */
+/* BONG BÓNG TIN NHẮN                           */
+/* ============================================= */
+.chat-message {
+    padding: 10px 14px;
+    border-radius: 16px;
+    max-width: 80%;
+    font-size: 14px;
+    line-height: 1.4;
+    animation: bubblePop 0.25s ease-out;
+    word-wrap: break-word;
+    white-space: pre-line;
+}
+
+@keyframes bubblePop {
+    0% {
+        transform: scale(0.6);
+        opacity: 0;
+    }
+
+    80% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.user-message {
+    align-self: flex-end;
+    background: #fef3c7;
+    border: 1px solid #f6d98e;
+    color: #775200;
+    box-shadow: 0 3px 10px rgba(255,200,60,0.3);
+}
+
+.ai-message {
+    align-self: flex-start;
+    background: #e9e3ff;
+    border: 1px solid #c7bbff;
+    color: #4b3c99;
+    box-shadow: 0 3px 10px rgba(110,75,255,0.25);
+}
+
+    .ai-message img,
+    .user-message img {
+        max-width: 100%;
+        border-radius: 12px;
+        margin-top: 6px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+/* ============================================= */
+/* Typing ... nhún nhảy                         */
+/* ============================================= */
+.ai-typing {
+    display: flex;
+    gap: 6px;
+}
+
+    .ai-typing span {
+        width: 8px;
+        height: 8px;
+        background: #a38aff;
+        border-radius: 50%;
+        animation: bounceDot 0.6s infinite alternate;
+    }
+
+        .ai-typing span:nth-child(2) {
+            animation-delay: 0.15s;
+        }
+
+        .ai-typing span:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+@keyframes bounceDot {
+    0% {
+        transform: translateY(0);
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: translateY(-6px);
+        opacity: 1;
+    }
+}
+
+/* ============================================= */
+/* FORM GỬI TIN                                 */
+/* ============================================= */
+.chat-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #fff;
+    padding: 10px;
+    border-top: 2px solid #e3d8ff;
+}
+
+    .chat-form textarea {
+        flex: 1;
+        resize: none;
+        border: 1px solid #cfc2ff;
+        border-radius: 12px;
+        padding: 8px 10px;
+        font-size: 14px;
+        background: #faf8ff;
+        transition: 0.2s;
+    }
+
+        .chat-form textarea:focus {
+            border-color: #9c86ff;
+            box-shadow: 0 0 5px rgba(156,134,255,0.4);
+        }
+
+    .chat-form button[type="submit"] {
+        background: #b09bff;
+        border: none;
+        padding: 10px 14px;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        box-shadow: 0 3px 10px rgba(160,135,255,0.4);
+        transition: 0.2s;
+    }
+
+    .chat-form button:hover {
+        transform: scale(1.2) rotate(8deg);
+    }
+
+/* Upload file */
+.file-label {
+    font-size: 20px;
+    cursor: pointer;
+    color: #937cff;
+    transition: 0.2s;
+}
+
+    .file-label:hover {
+        transform: scale(1.2);
+    }
+
+/* ============================================= */
+/* FILE PREVIEW                                 */
+/* ============================================= */
+.file-preview-mini {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-top: 6px;
+}
+
+.preview-item {
+    background: #efe9ff;
+    border: 1px solid #cfc2ff;
+    padding: 5px;
+    border-radius: 10px;
+    position: relative;
+    animation: bubblePop 0.2s ease-out;
+}
+
+    .preview-item img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+.file-name {
+    font-size: 12px;
+    max-width: 70px;
+    display: block;
+}
+
+.remove-file {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    background: #ff6b6b;
+    color: #fff;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+    .remove-file:hover {
+        transform: scale(1.2);
+    }

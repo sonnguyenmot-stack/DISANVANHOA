@@ -1,0 +1,236 @@
+﻿@model List<DISANVANHOA.Models.EF.QuestionDiSan>
+
+@{
+    ViewBag.Title = "Game Đảo Bát";
+}
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<link href="~/Content/assets/styles/gamefilp.css" rel="stylesheet" />
+<style>
+    #gameEndSection {
+        text-align: center;
+        display: none;
+        margin-top: 40px;
+    }
+
+        #gameEndSection img {
+            width: 300px;
+            border: 5px solid gold;
+            border-radius: 15px;
+            box-shadow: 0 0 20px gold;
+        }
+</style>
+
+<!-- Start Area -->
+<div id="gameStartSection">
+    <h2>🎮 Thử thách tìm di sản Tuyên Quang</h2>
+    <div style="display:flex; justify-content:center; align-items:center; gap:15px;">
+        <button id="btnStartGameFlip">Bắt đầu chơi</button>
+        <div class="cute-right">🐣🎉</div>
+    </div>
+    <div style="margin-top:20px;">
+        <span>Chọn cấp độ: </span>
+        <button class="btnLevel" data-speed="1500">Dễ</button>
+        <button class="btnLevel" data-speed="800">Bình thường</button>
+        <button class="btnLevel" data-speed="400">Khó</button>
+    </div>
+</div>
+
+<!-- Game Play Area -->
+<div id="gameQuestionSection">
+    <div id="gameQuestionTitle"></div>
+    <div class="bowl-container" id="gameBowlGrid"></div>
+    <div id="gameMsg"></div>
+</div>
+
+<!-- End Area -->
+<div id="gameEndSection">
+    <h3>🎉 CHÚC MỪNG! BẠN ĐÃ HOÀN THÀNH 10 CÂU! 🎓</h3>
+    <div style="margin-top:20px;">
+        <img src="~/images/cup.png" alt="Chứng nhận">
+    </div>
+    <h4 style="margin-top:15px; color:blue;">🏅 Danh hiệu: Chuyên gia Di Sản</h4>
+    <button id="btnRestartGameFlip" class="btn btn-success" style="margin-top:20px;">Chơi lại</button>
+</div>
+
+<!-- Âm thanh -->
+<audio id="gameBgMusic" src="~/Content/sounds/bg_game.mp3" loop></audio>
+<audio id="gameCorrectSound" src="~/Content/sounds/correct.mp3"></audio>
+<audio id="gameWrongSound" src="~/Content/sounds/wrong.mp3"></audio>
+<audio id="gameCelebrationSound" src="~/Content/sounds/celebration.mp3"></audio>
+<audio id="gameOpenSound">
+    <source src="https://actions.google.com/sounds/v1/cartoon/pop.ogg" type="audio/ogg">
+</audio>
+
+<script>
+/* ========================================================
+   CHẠY GAME SAU KHI ĐƯỢC LOAD QUA AJAX
+   => KHÔNG dùng DOMContentLoaded
+======================================================== */
+function initGameFlip() {
+    console.log("⚡ Game Đảo Bát đã khởi tạo qua AJAX!");
+
+    let allGameQuestions = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model));
+    let selectedQuestions = [];
+    let currentIndex = 0;
+    let shuffleSpeed = 800;
+
+    // Lấy 10 câu ngẫu nhiên
+    function pick10RandomQuestions() {
+        const arr = [...allGameQuestions];
+        arr.sort(() => Math.random() - 0.5);
+        return arr.slice(0, 10);
+    }
+
+    // Chọn cấp độ
+    document.querySelectorAll('.btnLevel').forEach(btn => {
+        btn.addEventListener('click', () => {
+            shuffleSpeed = parseInt(btn.getAttribute('data-speed'));
+            document.querySelectorAll('.btnLevel').forEach(b => b.style.background = '');
+            btn.style.background = '#8fd3ff';
+        });
+    });
+
+    // Bắt đầu game
+    document.getElementById('btnStartGameFlip').addEventListener('click', () => {
+        document.getElementById('gameStartSection').style.display = 'none';
+        document.getElementById('gameEndSection').style.display = 'none';
+        document.getElementById('gameBgMusic').play();
+
+        currentIndex = 0;
+        selectedQuestions = pick10RandomQuestions();
+        showNextQuestion();
+    });
+
+    // Hiển thị câu hỏi
+    function showNextQuestion() {
+        if (currentIndex >= 10) {
+            endGame();
+            return;
+        }
+
+        const question = selectedQuestions[currentIndex];
+        document.getElementById('gameQuestionTitle').textContent =
+            `Câu ${currentIndex + 1}: ${question.Name}`;
+
+        const container = document.getElementById('gameBowlGrid');
+        container.innerHTML = '';
+
+        const bowls = [];
+        const numBowls = 9;
+        const correctIndex = Math.floor(Math.random() * numBowls);
+
+        for (let i = 0; i < numBowls; i++) {
+            const bowl = document.createElement('div');
+            bowl.classList.add('bowl');
+            bowl.dataset.index = i;
+
+            bowl.innerHTML = `🐣 <img src="${question.Img1}" style="display:none;">`;
+
+            bowl.addEventListener('click', () => {
+                if (i === correctIndex) {
+                    bowl.classList.add('open');
+                    bowl.querySelector('img').style.display = 'block';
+
+                    document.getElementById('gameCorrectSound').play();
+                    document.getElementById('gameMsg').textContent = "🎉 Bạn chọn đúng!";
+                    document.getElementById('gameMsg').style.color = "#28a745";
+
+                    setTimeout(() => {
+                        document.getElementById('gameMsg').textContent = "";
+                        currentIndex++;
+                        showNextQuestion();
+                    }, 1000);
+
+                } else {
+                    bowl.innerHTML = "😄";
+                    document.getElementById('gameWrongSound').play();
+                    document.getElementById('gameMsg').textContent = "❌ Sai rồi!";
+                    document.getElementById('gameMsg').style.color = "#dc3545";
+                }
+            });
+
+            container.appendChild(bowl);
+            bowls.push(bowl);
+        }
+
+        // Hiển thị bát đúng ban đầu 2s
+        setTimeout(() => {
+            bowls[correctIndex].classList.add('open');
+            bowls[correctIndex].querySelector('img').style.display = 'block';
+            document.getElementById('gameOpenSound').play();
+
+            setTimeout(() => {
+                bowls[correctIndex].classList.remove('open');
+                bowls[correctIndex].querySelector('img').style.display = 'none';
+                shuffleBowls(bowls, shuffleSpeed);
+            }, 2000);
+        }, 500);
+    }
+
+    // Shuffle bát
+    function shuffleBowls(bowls, speed) {
+        const container = document.getElementById('gameBowlGrid');
+        const positions = bowls.map(b => {
+            const rect = b.getBoundingClientRect();
+            const parent = container.getBoundingClientRect();
+            return { x: rect.left - parent.left, y: rect.top - parent.top };
+        });
+
+        const newOrder = [...bowls];
+        for (let i = newOrder.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [newOrder[i], newOrder[j]] = [newOrder[j], newOrder[i]];
+        }
+
+        newOrder.forEach((b, i) => {
+            const oldIndex = parseInt(b.dataset.index);
+            const dx = positions[i].x - positions[oldIndex].x;
+            const dy = positions[i].y - positions[oldIndex].y;
+            b.style.transition = `transform ${speed / 1000}s ease`;
+            b.style.transform = `translate(${dx}px, ${dy}px)`;
+        });
+
+        setTimeout(() => {
+            newOrder.forEach(b => {
+                b.style.transition = '';
+                b.style.transform = '';
+            });
+            newOrder.forEach(b => container.appendChild(b));
+            newOrder.forEach((b, i) => b.dataset.index = i);
+        }, speed + 50);
+    }
+
+    // Kết thúc game
+    function endGame() {
+        document.getElementById('gameBowlGrid').innerHTML = '';
+        document.getElementById('gameQuestionTitle').textContent = '';
+        document.getElementById('gameMsg').textContent = '';
+        document.getElementById('gameEndSection').style.display = 'block';
+
+        document.getElementById('gameCelebrationSound').play();
+        document.getElementById('gameBgMusic').pause();
+
+        let duration = 2000;
+        let end = Date.now() + duration;
+
+        (function frame() {
+            confetti({ particleCount: 5, angle: 60, spread: 55, origin: { x: 0 } });
+            confetti({ particleCount: 5, angle: 120, spread: 55, origin: { x: 1 } });
+            if (Date.now() < end) requestAnimationFrame(frame);
+        })();
+    }
+
+    // Chơi lại
+    document.getElementById('btnRestartGameFlip').addEventListener('click', () => {
+        document.getElementById('gameEndSection').style.display = 'none';
+        document.getElementById('gameStartSection').style.display = 'block';
+    });
+}
+
+// **Ví dụ khi load qua AJAX**
+// $("#tab_2").load("/Quiz/Game", function() {
+//     initGameFlip();
+// });
+</script>
+

@@ -1,0 +1,38 @@
+﻿@model IEnumerable<DISANVANHOA.Models.EF.Document>
+@if (Model != null && Model.Any())
+{
+    foreach (var item in Model)
+    {
+        <!-- Product 1 -->
+
+        //var strImge = "";
+        //var img = item.DocumentImages.FirstOrDefault(x => x.IsDefault);
+        //if (img != null)
+        //{
+        //    strImge = img.Image;
+        //}
+
+        <div class="product-item men @item.DocType.Alias">
+            <div class="product discount product_filter">
+                <div class="product_image">
+                    <img src="@item.Img" alt="@item.Title" width="221" height="221">
+                </div>
+                <div class="favorite favorite_left"></div>
+                @*<div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>-$20</span></div>*@
+                <div class="product_info">
+                    <h5 class="product_name"><a href="/chi-tiet/@item.Alias-p@(item.Id)">@item.Title</a></h5>
+                    <h8 class="product_name"><a href="/chi-tiet/@item.Alias-p@(item.Id)">@item.Description</a></h8>
+                    @*<div class="product_price">$520.00<span>$590.00</span></div>*@
+                </div>
+            </div>
+            <div class="red_button add_to_cart_button"><a href="/chi-tiet/@item.Alias-p@(item.Id)">Khám phá</a></div>
+        </div>
+    }
+
+
+
+
+}
+
+
+

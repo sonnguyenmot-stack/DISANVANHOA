@@ -1,0 +1,147 @@
+﻿
+<link href="~/Content/assets/styles/thongke.css" rel="stylesheet" />
+@if (Model != null)
+{
+    <!-- THỐNG KÊ -->
+    <div class="thongke-wrapper">
+
+        <div class="tk-card">
+            <h4>Hôm Nay</h4>
+            <span>@Model.HomNay</span>
+        </div>
+
+        <div class="tk-card">
+            <h4>Hôm Qua</h4>
+            <span>@Model.HomQua</span>
+        </div>
+
+        <div class="tk-card">
+            <h4>Tuần Này</h4>
+            <span>@Model.TuanNay</span>
+        </div>
+
+        <div class="tk-card">
+            <h4>Tuần Trước</h4>
+            <span>@Model.TuanTruoc</span>
+        </div>
+
+        <div class="tk-card">
+            <h4>Tháng Này</h4>
+            <span>@Model.ThangNay</span>
+        </div>
+
+        <div class="tk-card">
+            <h4>Tháng Trước</h4>
+            <span>@Model.ThangTruoc</span>
+        </div>
+
+        <div class="tk-card online">
+            <h4>Đang Online</h4>
+            <span>@ViewBag.Visitors_online</span>
+        </div>
+    </div>
+
+    <!-- BIỂU ĐỒ -->
+    <div class="chart-wrapper">
+        <div class="chart-card">
+            <h3>Thống Kê Truy Cập</h3>
+            <div style="height: 300px;">
+                <canvas id="trafficChart"></canvas>
+            </div>
+        </div>
+
+        <div class="chart-card">
+            <h3>Người Online (Realtime)</h3>
+            <div style="height: 300px;">
+                <canvas id="onlineChart"></canvas>
+            </div>
+        </div>
+    </div>
+}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+// ------------------ BIỂU ĐỒ LƯỢT TRUY CẬP ------------------
+const trafficCtx = document.getElementById('trafficChart').getContext('2d');
+
+new Chart(trafficCtx, {
+    type: 'line',
+    data: {
+        labels: ["Hôm Qua", "Hôm Nay", "Tuần Trước", "Tuần Này", "Tháng Trước", "Tháng Này"],
+        datasets: [{
+            label: "Lượt Truy Cập",
+            data: [
+                @Model.HomQua,
+                @Model.HomNay,
+                @Model.TuanTruoc,
+                @Model.TuanNay,
+                @Model.ThangTruoc,
+                @Model.ThangNay
+            ],
+            borderWidth: 3,
+            fill: true,
+            tension: 0.3
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: { labels: { color: "#000" } }
+        },
+        scales: {
+            x: { ticks: { color: "#000" } },
+            y: { ticks: { color: "#000" } }
+        }
+    }
+});
+
+// ------------------ BIỂU ĐỒ REALTIME ONLINE ------------------
+const onlineCtx = document.getElementById('onlineChart').getContext('2d');
+
+let onlineData = {
+    labels: [],
+    values: []
+};
+
+const onlineChart = new Chart(onlineCtx, {
+    type: 'bar',
+    data: {
+        labels: onlineData.labels,
+        datasets: [{
+            label: "Online",
+            data: onlineData.values,
+            borderWidth: 2
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: { labels: { color: "#000" } }
+        },
+        scales: {
+            x: { ticks: { color: "#000" } },
+            y: { ticks: { color: "#000" }, suggestedMin: 0 }
+        }
+    }
+});
+
+// Auto update mỗi 2s
+function updateOnline() {
+    const onlineNumber = Number("@ViewBag.Visitors_online");
+    const timeNow = new Date().toLocaleTimeString();
+
+    onlineData.labels.push(timeNow);
+    onlineData.values.push(onlineNumber);
+
+    if (onlineData.labels.length > 10) {
+        onlineData.labels.shift();
+        onlineData.values.shift();
+    }
+
+    onlineChart.update();
+}
+
+setInterval(updateOnline, 2000);
+</script>

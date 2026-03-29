@@ -1,0 +1,173 @@
+﻿@model List<DISANVANHOA.Models.EF.Question>
+@{ Layout = null; }
+<link href="~/Content/assets/styles/gamequiz.css" rel="stylesheet" />
+<!-- Nút bắt đầu chơi -->
+<div id="startArea">
+    <h2>🎮 Thử thách Di Sản Tuyên Quang</h2>
+    <div style="display:flex; justify-content:center; align-items:center; gap:15px;">
+        <button id="startBtn" class="btn btn-primary btn-lg">Bắt đầu chơi</button>
+        <div class="cute-right">
+            🐣🎉
+        </div>
+    </div>
+</div>
+
+
+<!-- Quiz container -->
+<div id="quizContainer" style="display:none;">
+    <div class="progress mb-2" style="height:25px;">
+        <div id="progressBar" class="progress-bar" role="progressbar" style="width:0%">0%</div>
+    </div>
+
+    <div id="questionArea" style="min-height:150px;"></div>
+    <div id="timer">Thời gian: <span id="time">60</span>s</div>
+</div>
+
+<!-- Kết quả -->
+<div id="scoreArea" style="display:none; text-align:center;">
+    <h3>🎓 Bạn đã hoàn thành trò chơi!</h3>
+    <p>Bạn đạt <span id="score"></span> / @Model.Count() câu đúng</p>
+    <div style="margin:20px auto;">
+        <img src="~/images/cup.png" alt="Chứng nhận học sinh chăm chỉ"
+             style="width:300px; border:5px solid gold; border-radius:15px; box-shadow:0 0 20px gold;">
+    </div>
+    <h4>Chứng nhận: <span style="color:blue;">Học sinh chăm chỉ</span></h4>
+    <button id="restartBtn" class="btn btn-success">Chơi lại</button>
+</div>
+
+<!-- Âm thanh -->
+<audio id="correctSound" src="~/Content/sounds/correct.mp3"></audio>
+<audio id="wrongSound" src="~/Content/sounds/wrong.mp3"></audio>
+<audio id="bgMusic" src="~/Content/sounds/cauhoi.mp3" loop></audio>
+<audio id="celebrationSound" src="~/Content/sounds/celebration.mp3"></audio>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+var questions = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model));
+var current = 0;
+var score = 0;
+var timer;
+var timeLeft = 60;
+
+// Cập nhật progress bar
+function updateProgress(){
+    var percent = (current/questions.length)*100;
+    $("#progressBar").css("width", percent+"%").text(Math.round(percent)+"%");
+}
+
+// Hiển thị câu hỏi
+function showQuestion(){
+    if(current >= questions.length){
+        $("#quizContainer").fadeOut(500,function(){
+            $("#scoreArea").fadeIn(500);
+            $("#score").text(score);
+            $("#bgMusic")[0].pause();
+            $("#celebrationSound")[0].play();
+
+            // Hiệu ứng confetti
+            var duration = 2 * 1000;
+            var end = Date.now() + duration;
+            (function frame(){
+                confetti({ particleCount: 3, angle: 60, spread: 55, origin: { x: 0 } });
+                confetti({ particleCount: 3, angle: 120, spread: 55, origin: { x: 1 } });
+                if (Date.now() < end) requestAnimationFrame(frame);
+            })();
+        });
+        return;
+    }
+
+    updateProgress();
+    var q = questions[current];
+    var html = `<p><b>Câu ${current+1}: ${q.Text}</b></p>`;
+    html += `<div id="options">`;
+    ["A","B","C","D"].forEach(function(opt){
+        html += `<label class="option" data-opt="${opt}">
+                     <input type="radio" name="answer" value="${opt}" /> ${q["Option"+opt]}
+                 </label><br>`;
+    });
+    html += `</div>`;
+
+    $("#questionArea").fadeOut(300,function(){
+        $(this).html(html).fadeIn(300);
+    });
+
+    timeLeft = 60;
+    $("#time").text(timeLeft);
+    startTimer();
+}
+
+// Countdown
+function startTimer(){
+    clearInterval(timer);
+    timer = setInterval(function(){
+        timeLeft--;
+        $("#time").text(timeLeft);
+        if(timeLeft <=0){
+            clearInterval(timer);
+            checkAnswer();
+        }
+    },1000);
+}
+
+// Phát âm thanh đúng/sai
+function playSound(correct){
+    var sound = correct ? $("#correctSound")[0] : $("#wrongSound")[0];
+    sound.play();
+}
+
+// Kiểm tra câu trả lời
+function checkAnswer(){
+    clearInterval(timer);
+    var selected = $("input[name='answer']:checked").val();
+    var q = questions[current];
+
+    $.post('@Url.Action("SubmitAnswer","Quiz")', { questionId: q.Id, selected: selected }, function(data){
+        $(".option").each(function(){
+            var opt = $(this).data("opt");
+            $(this).css("color","black");
+            if(opt === data.correctAnswer) $(this).css("color","green");
+        });
+
+        if(!data.correct && selected){
+            $(`.option[data-opt='${selected}']`).css("color","red");
+        }
+
+        playSound(data.correct);
+
+        if(data.correct) score++;
+
+        current++;
+        setTimeout(showQuestion,2000);
+    });
+}
+
+$(document).ready(function(){
+    $("#startBtn").click(function(){
+        $("#startArea").fadeOut(300, function(){
+            $("#quizContainer").fadeIn(300);
+            current = 0;
+            score = 0;
+            $("#bgMusic")[0].play();
+            showQuestion();
+        });
+    });
+
+    $(document).on("change","input[name='answer']",function(){
+        checkAnswer();
+    });
+
+    $("#restartBtn").click(function(){
+        current = 0;
+        score = 0;
+        $("#scoreArea").fadeOut(300,function(){
+            $("#progressBar").css("width","0%").text("0%");
+            $("#quizContainer").fadeIn(300);
+            $("#bgMusic")[0].play();
+            showQuestion();
+        });
+    });
+});
+</script>
+

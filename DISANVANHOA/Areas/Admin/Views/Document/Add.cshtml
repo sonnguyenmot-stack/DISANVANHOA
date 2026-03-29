@@ -1,0 +1,153 @@
+﻿@model DISANVANHOA.Models.EF.Document
+@{
+    ViewBag.Title = "Thêm mới Tài Liệu";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@section naviheader{
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="/admin/home" class="nav-link">Trang chủ</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="/admin/Document" class="nav-link">Tài Liệu</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="#" class="nav-link">Thêm mới</a>
+        </li>
+    </ul>
+}
+
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Thêm mới Tài Liệu</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Tài Liệu</a></li>
+                    <li class="breadcrumb-item active">Thêm mới</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content">
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">Thông tin thêm mới Tài Liệu</h3>
+        </div>
+        <div class="card-body">
+            @using (Html.BeginForm("Add", "Document", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true)
+
+                <div class="form-group">
+                    <label>Tiêu đề</label>
+                    @Html.TextBoxFor(x => x.Title, new { @class = "form-control", @placeholder = "Tiêu đề" })
+                    @Html.ValidationMessageFor(x => x.Title, null, new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    <label>Alias</label>
+                    @Html.TextBoxFor(x => x.Alias, new { @class = "form-control", @placeholder = "Bí danh" })
+                    @Html.ValidationMessageFor(x => x.Alias, null, new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    <label>Địa điểm</label>
+                    @Html.DropDownListFor(x => x.DocumentCategoryId, ViewBag.DoccumentCategory as SelectList, "-Chọn địa điểm-", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.DocumentCategoryId, null, new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    <label>Chứng nhận</label>
+                    @Html.DropDownListFor(x => x.CertificateId, ViewBag.Certificate as SelectList, "-Chọn chứng nhận-", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.CertificateId, null, new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    <label>Loại hình</label>
+                    @Html.DropDownListFor(x => x.DocTypeId, ViewBag.DocType as SelectList, "-Chọn loại hình-", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.DocTypeId, null, new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    <label>Ảnh đại diện</label>
+                    <div class="input-group">
+                        <div class="custom-file">
+                            @Html.TextBoxFor(x => x.Img, new { @id = "txtImage", @class = "form-control" })
+                        </div>
+                        <div class="input-group-append">
+                            <input type="button" value="Tải ảnh" onclick="BrowseServer('txtImage');" class="btn btn-secondary" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Tải Tài Liệu</label>
+                    <input type="file" name="file" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Tải Video</label>
+                    <input type="file" name="videoFile" accept="video/*" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Nguồn Tài Liệu</label>
+                    @Html.TextBoxFor(x => x.Author, new { @class = "form-control", @placeholder = "Nguồn tài liệu" })
+                    @Html.ValidationMessageFor(x => x.Author, null, new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    <label>Mô tả</label>
+                    @Html.TextAreaFor(x => x.Description, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Chi tiết</label>
+                    @Html.TextAreaFor(x => x.Detail, new { @class = "form-control", @id = "txtDetail" })
+                </div>
+
+                <div class="form-group">
+                    <label>Hiển thị</label>
+                    @Html.CheckBoxFor(x => x.IsActive)
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-outline-success">Lưu</button>
+                    <a href="/admin/document" class="btn btn-outline-warning">Quay lại</a>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+@section scripts{
+    <script>
+$(document).ready(function () {
+
+    CKEDITOR.replace('txtDetail', {
+        customConfig: '/content/ckeditor/config.js',
+        extraAllowedContent: 'span',
+    });
+
+    
+
+});
+
+// CKFinder chọn ảnh
+function BrowseServer(field) {
+    var finder = new CKFinder();
+    finder.selectActionFunction = function (fileUrl) {
+        document.getElementById(field).value = fileUrl;
+    };
+    finder.popup();
+}
+    </script>
+    <script src="~/Scripts/jsConvert.js"></script>
+}

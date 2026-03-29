@@ -1,0 +1,60 @@
+﻿
+/* ---------- CSS gốc giữ nguyên ---------- */
+.deal_ofthe_week_img img {
+    border-radius: 15px;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.deal_ofthe_week_img img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.section_title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #f47f7f;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.section_title h3 {
+    font-size: 22px !important;
+    color: #ff6a00 !important;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.section_title p {
+    font-size: 16px !important;
+    line-height: 1.6;
+    color: #000000 !important;
+    margin-top: 10px;
+}
+
+/* ---------- Media Query cho Mobile ---------- */
+@media (max-width: 768px) {
+    .deal_ofthe_week_img img {
+        width: 100%; /* ảnh co vừa màn hình */
+        height: auto; /* giữ tỉ lệ */
+    }
+
+    .deal_ofthe_week_col {
+        text-align: center !important; /* căn giữa nội dung bên cạnh ảnh */
+        margin-top: 15px;
+    }
+
+    .section_title h2 {
+        font-size: 24px; /* nhỏ hơn cho mobile */
+    }
+
+    .section_title h3 {
+        font-size: 18px !important;
+    }
+
+    .section_title p {
+        font-size: 14px !important;
+    }
+}
+

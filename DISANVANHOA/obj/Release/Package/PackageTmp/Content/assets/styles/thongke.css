@@ -1,0 +1,124 @@
+﻿/* GRID THỐNG KÊ */
+.thongke-wrapper {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+/* CARD THỐNG KÊ */
+.tk-card {
+    padding: 22px;
+    border-radius: 16px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.18);
+    color: #000;
+    transition: 0.35s ease;
+    animation: fadeUp 0.7s ease forwards;
+    opacity: 0;
+}
+
+    /* Hover neon */
+    .tk-card:hover {
+        transform: translateY(-8px) scale(1.03);
+        box-shadow: 0 0 15px rgba(0, 115, 230, 0.5);
+    }
+
+    /* Tiêu đề */
+    .tk-card h4 {
+        margin: 0;
+        font-size: 16px;
+        margin-bottom: 10px;
+        font-weight: 600;
+        color: #000;
+    }
+
+    /* Số liệu */
+    .tk-card span {
+        font-size: 28px;
+        font-weight: 700;
+        color: #000;
+    }
+
+    .tk-card.online span {
+        color: #2e8b57;
+        text-shadow: 0 0 5px rgba(46,139,87,0.5);
+    }
+
+/* BIỂU ĐỒ GLASS */
+.chart-wrapper {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 30px;
+}
+
+.chart-card {
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(12px);
+    border-radius: 18px;
+    padding: 25px;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+    animation: fadeUp 0.7s ease forwards;
+    opacity: 0;
+}
+
+    .chart-card h3 {
+        text-align: center;
+        color: #000;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+/* Animation Fade */
+.tk-card:nth-child(1) {
+    animation-delay: 0.05s;
+}
+
+.tk-card:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.tk-card:nth-child(3) {
+    animation-delay: 0.15s;
+}
+
+.tk-card:nth-child(4) {
+    animation-delay: 0.2s;
+}
+
+.tk-card:nth-child(5) {
+    animation-delay: 0.25s;
+}
+
+.tk-card:nth-child(6) {
+    animation-delay: 0.3s;
+}
+
+.tk-card:nth-child(7) {
+    animation-delay: 0.35s;
+}
+
+.chart-card:nth-child(1) {
+    animation-delay: 0.4s;
+}
+
+.chart-card:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

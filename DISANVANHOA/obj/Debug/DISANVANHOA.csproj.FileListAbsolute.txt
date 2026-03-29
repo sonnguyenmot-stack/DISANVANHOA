@@ -1,0 +1,636 @@
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\DISANVANHOA.dll.config
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\DISANVANHOA.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\DISANVANHOA.pdb
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\csc.exe
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\csc.exe.config
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\csc.rsp
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\csi.exe
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\csi.exe.config
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\csi.rsp
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\System.AppContext.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Console.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\System.IO.Compression.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Net.Http.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Net.Sockets.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\System.ValueTuple.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Xml.XPath.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\vbc.exe
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\vbc.exe.config
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\vbc.rsp
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\VBCSCompiler.exe
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\Antlr3.Runtime.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\EntityFramework.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\EntityFramework.SqlServer.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\Newtonsoft.Json.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\Owin.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\System.Web.Helpers.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\System.Web.Mvc.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\System.Web.Optimization.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\System.Web.Razor.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\System.Web.WebPages.Deployment.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\System.Web.WebPages.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\System.Web.WebPages.Razor.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\WebGrease.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\System.Web.Helpers.xml
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\System.Web.Mvc.xml
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\System.Web.Optimization.xml
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\System.Web.Razor.xml
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\System.Web.WebPages.xml
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\System.Web.WebPages.Deployment.xml
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\System.Web.WebPages.Razor.xml
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\Newtonsoft.Json.xml
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\Antlr3.Runtime.pdb
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\EntityFramework.xml
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\EntityFramework.SqlServer.xml
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.xml
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.xml
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.csproj.AssemblyReference.cache
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.csproj.CoreCompileInputs.cache
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVAN.07E27579.Up2Date
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.dll
+C:\Users\DUCK\source\repos\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.pdb
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\DISANVANHOA.dll.config
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\DISANVANHOA.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\DISANVANHOA.pdb
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\csc.exe
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\csc.exe.config
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\csc.rsp
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\csi.exe
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\csi.exe.config
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\csi.rsp
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\System.AppContext.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Console.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\System.IO.Compression.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Net.Http.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Net.Sockets.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\System.ValueTuple.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Xml.XPath.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\vbc.exe
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\vbc.exe.config
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\vbc.rsp
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\VBCSCompiler.exe
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Antlr3.Runtime.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\EntityFramework.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\EntityFramework.SqlServer.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Newtonsoft.Json.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Owin.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\System.Web.Helpers.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\System.Web.Mvc.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\System.Web.Optimization.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\System.Web.Razor.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\System.Web.WebPages.Deployment.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\System.Web.WebPages.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\System.Web.WebPages.Razor.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\WebGrease.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\System.Web.Helpers.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\System.Web.Mvc.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\System.Web.Optimization.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\System.Web.Razor.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\System.Web.WebPages.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\System.Web.WebPages.Deployment.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\System.Web.WebPages.Razor.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Newtonsoft.Json.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Antlr3.Runtime.pdb
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\EntityFramework.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\EntityFramework.SqlServer.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.csproj.AssemblyReference.cache
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.csproj.CoreCompileInputs.cache
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVAN.07E27579.Up2Date
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.pdb
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\PagedList.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\PagedList.Mvc.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\PagedList.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\PagedList.Mvc.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\CKFinder.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\CKFinder.pdb
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.SignalR.Core.pdb
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.SignalR.SystemWeb.pdb
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\BouncyCastle.Cryptography.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\DocumentFormat.OpenXml.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\DocumentFormat.OpenXml.Framework.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\itextsharp.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\OpenAI.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\System.Buffers.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\System.ClientModel.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\System.Memory.Data.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\System.Memory.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\System.Net.ServerSentEvents.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\System.Numerics.Vectors.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\System.Text.Encodings.Web.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\System.Text.Json.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\System.ValueTuple.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\BouncyCastle.Cryptography.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\DocumentFormat.OpenXml.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\DocumentFormat.OpenXml.Framework.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\itextsharp.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\OpenAI.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\System.Buffers.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\System.ClientModel.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\System.Memory.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\System.Memory.Data.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\System.Net.ServerSentEvents.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\System.Numerics.Vectors.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\System.Text.Encodings.Web.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\System.Text.Json.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\System.ValueTuple.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Cors.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\System.Web.Cors.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Cors.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.Migrations.database.resources
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.csproj.GenerateResource.cache
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.Migrations.thongke.resources
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Dapper.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\Dapper.xml
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.Migrations.thongke2.resources
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\DocX.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\bin\MediaToolkit.dll
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.Migrations.data1.resources
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.Migrations.data2.resources
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.Migrations.data3.resources
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.Migrations.data4.resources
+C:\Users\DUCK\Desktop\Dự án tháng 12\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.Migrations.data5.resources
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\DISANVANHOA.dll.config
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\DISANVANHOA.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\DISANVANHOA.pdb
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\csc.exe
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\csc.exe.config
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\csc.rsp
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\csi.exe
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\csi.exe.config
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\csi.rsp
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\System.AppContext.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Console.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\System.IO.Compression.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Net.Http.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Net.Sockets.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\System.ValueTuple.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Xml.XPath.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\vbc.exe
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\vbc.exe.config
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\vbc.rsp
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\VBCSCompiler.exe
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Antlr3.Runtime.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\BouncyCastle.Cryptography.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\CKFinder.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Dapper.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\DocumentFormat.OpenXml.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\DocumentFormat.OpenXml.Framework.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\DocX.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\EntityFramework.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\EntityFramework.SqlServer.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\itextsharp.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\MediaToolkit.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Cors.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Newtonsoft.Json.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\OpenAI.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Owin.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\PagedList.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\PagedList.Mvc.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\System.Buffers.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\System.ClientModel.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\System.Memory.Data.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\System.Memory.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\System.Net.ServerSentEvents.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\System.Numerics.Vectors.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\System.Text.Encodings.Web.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\System.Text.Json.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\System.ValueTuple.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\System.Web.Cors.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\System.Web.Helpers.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\System.Web.Mvc.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\System.Web.Optimization.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\System.Web.Razor.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\System.Web.WebPages.Deployment.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\System.Web.WebPages.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\System.Web.WebPages.Razor.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\WebGrease.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\BouncyCastle.Cryptography.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\CKFinder.pdb
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Dapper.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\DocumentFormat.OpenXml.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\DocumentFormat.OpenXml.Framework.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\EntityFramework.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\EntityFramework.SqlServer.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\itextsharp.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.SignalR.Core.pdb
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.SignalR.SystemWeb.pdb
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Cors.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Newtonsoft.Json.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\OpenAI.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\PagedList.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\PagedList.Mvc.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\System.Buffers.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\System.ClientModel.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\System.Memory.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\System.Memory.Data.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\System.Net.ServerSentEvents.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\System.Numerics.Vectors.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\System.Text.Encodings.Web.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\System.Text.Json.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\System.ValueTuple.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\System.Web.Helpers.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\System.Web.Mvc.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\System.Web.Optimization.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\System.Web.Razor.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\System.Web.WebPages.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\System.Web.WebPages.Deployment.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\System.Web.WebPages.Razor.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Antlr3.Runtime.pdb
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.csproj.AssemblyReference.cache
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.Migrations.database.resources
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.Migrations.thongke.resources
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.Migrations.thongke2.resources
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.Migrations.data1.resources
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.Migrations.data2.resources
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.Migrations.data3.resources
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.Migrations.data4.resources
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.Migrations.data5.resources
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.csproj.GenerateResource.cache
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.csproj.CoreCompileInputs.cache
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVAN.07E27579.Up2Date
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.dll
+C:\Users\DUCK\Desktop\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.pdb
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\DISANVANHOA.dll.config
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\DISANVANHOA.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\DISANVANHOA.pdb
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\csc.exe
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\csc.exe.config
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\csc.rsp
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\csi.exe
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\csi.exe.config
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\csi.rsp
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\System.AppContext.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Console.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\System.IO.Compression.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Net.Http.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Net.Sockets.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\System.ValueTuple.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Xml.XPath.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\vbc.exe
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\vbc.exe.config
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\vbc.rsp
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\VBCSCompiler.exe
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Antlr3.Runtime.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\BouncyCastle.Cryptography.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\CKFinder.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Dapper.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\DocumentFormat.OpenXml.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\DocumentFormat.OpenXml.Framework.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\DocX.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\EntityFramework.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\EntityFramework.SqlServer.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\itextsharp.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\MediaToolkit.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Cors.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Newtonsoft.Json.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\OpenAI.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Owin.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\PagedList.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\PagedList.Mvc.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\System.Buffers.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\System.ClientModel.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\System.Memory.Data.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\System.Memory.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\System.Net.ServerSentEvents.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\System.Numerics.Vectors.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\System.Text.Encodings.Web.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\System.Text.Json.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\System.ValueTuple.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\System.Web.Cors.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\System.Web.Helpers.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\System.Web.Mvc.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\System.Web.Optimization.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\System.Web.Razor.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\System.Web.WebPages.Deployment.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\System.Web.WebPages.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\System.Web.WebPages.Razor.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\WebGrease.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\BouncyCastle.Cryptography.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\CKFinder.pdb
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Dapper.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\DocumentFormat.OpenXml.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\DocumentFormat.OpenXml.Framework.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\EntityFramework.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\EntityFramework.SqlServer.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\itextsharp.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.SignalR.Core.pdb
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.SignalR.SystemWeb.pdb
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Cors.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Newtonsoft.Json.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\OpenAI.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\PagedList.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\PagedList.Mvc.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\System.Buffers.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\System.ClientModel.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\System.Memory.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\System.Memory.Data.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\System.Net.ServerSentEvents.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\System.Numerics.Vectors.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\System.Text.Encodings.Web.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\System.Text.Json.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\System.ValueTuple.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\System.Web.Helpers.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\System.Web.Mvc.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\System.Web.Optimization.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\System.Web.Razor.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\System.Web.WebPages.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\System.Web.WebPages.Deployment.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\System.Web.WebPages.Razor.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Antlr3.Runtime.pdb
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.csproj.AssemblyReference.cache
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.Migrations.database.resources
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.Migrations.thongke.resources
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.Migrations.thongke2.resources
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.Migrations.data1.resources
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.Migrations.data2.resources
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.Migrations.data3.resources
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.Migrations.data4.resources
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.Migrations.data5.resources
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.csproj.GenerateResource.cache
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.csproj.CoreCompileInputs.cache
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVAN.07E27579.Up2Date
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.dll
+C:\Users\tieub\Desktop\MVC_ASP.NET\New folder\DISANVANHOA\DISANVANHOA\DISANVANHOA\obj\Debug\DISANVANHOA.pdb

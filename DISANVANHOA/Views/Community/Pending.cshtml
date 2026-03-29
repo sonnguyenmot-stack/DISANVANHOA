@@ -1,0 +1,230 @@
+﻿@model IEnumerable<DISANVANHOA.Models.EF.Post>
+@{
+    ViewBag.Title = "Bài viết chờ duyệt";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/Content/assets/styles/duyetbai.css" rel="stylesheet" />
+
+<div class="container news_section_container">
+    <h2 class="page-title">📌 Bài viết chờ duyệt</h2>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success custom-alert">@TempData["Success"]</div>
+    }
+
+    <div class="table-wrapper">
+        <table class="table post-table">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Tác giả</th>
+                    <th>Nội dung</th>
+                    <th>Media</th>
+                    <th>Ngày đăng</th>
+                    <th style="width:160px;">Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var p in Model)
+                {
+                    <tr>
+                        <td data-label="STT">@p.Id</td>
+                        <td data-label="Tác giả">@p.Author</td>
+                        <td data-label="Nội dung" class="post-content">
+                            @p.Content
+                        </td>
+                        <td data-label="Media">
+                            @if (p.MediaFiles != null && p.MediaFiles.Any())
+                            {
+                                <div class="media-grid">
+                                    @foreach (var media in p.MediaFiles)
+                                    {
+                                        var ext = Path.GetExtension(media.FilePath).ToLower();
+                                        if (ext == ".jpg" || ext == ".jpeg" || ext == ".png" || ext == ".gif")
+                                        {
+                                            <img src="@Url.Content(media.FilePath)" class="media-thumb" onclick="openLightbox('@Url.Content(media.FilePath)')" />
+                                        }
+                                        else if (ext == ".mp4" || ext == ".webm")
+                                        {
+                                            <video src="@Url.Content(media.FilePath)" class="media-thumb" controls onclick="openLightbox('@Url.Content(media.FilePath)')"></video>
+                                        }
+                                    }
+                                </div>
+                            }
+                        </td>
+                        <td data-label="Ngày đăng">@p.CreatedAt.ToString("g")</td>
+                        <td data-label="Hành động" class="action-col">
+                            @using (Html.BeginForm("Approve", "Community", FormMethod.Post))
+                            {
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="id" value="@p.Id" />
+                                <button type="submit" class="btn-approve-m">✔ Duyệt</button>
+                            }
+                            @using (Html.BeginForm("Reject", "Community", FormMethod.Post,
+                                new { onsubmit = "return confirm('Bạn có chắc muốn loại bỏ bài này?');" }))
+                            {
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="id" value="@p.Id" />
+                                <button type="submit" class="btn-reject-m">✖ Loại bỏ</button>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- =========================
+     FACEBOOK-STYLE LIGHTBOX
+========================= -->
+<div id="fbLightbox" class="fb-lightbox" onclick="closeLightbox(event)">
+    <button class="fb-lb-close" onclick="closeLightbox(event)">✖</button>
+    <div class="fb-lb-content">
+        <img id="lbMedia" src="" style="max-width: 90%; max-height: 80vh; border-radius:10px;" />
+    </div>
+</div>
+
+<script>
+    function openLightbox(src) {
+        event.stopPropagation();
+        const lightbox = document.getElementById("fbLightbox");
+        const lbMedia = document.getElementById("lbMedia");
+        lbMedia.src = src;
+        lightbox.classList.add("show");
+    }
+
+    function closeLightbox(event) {
+        if (event.target.id === "fbLightbox" || event.target.classList.contains("fb-lb-close")) {
+            const lightbox = document.getElementById("fbLightbox");
+            const lbMedia = document.getElementById("lbMedia");
+            lbMedia.src = "";
+            lightbox.classList.remove("show");
+        }
+    }
+</script>
+
+<style>
+    .news_section_container {
+        margin-top: 170px;
+    }
+
+    /* MEDIA GRID */
+    .media-grid {
+        display: grid;
+        gap: 6px;
+        grid-template-columns: repeat(auto-fit, minmax(60px,1fr));
+    }
+
+    .media-thumb {
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+        .media-thumb:hover {
+            transform: scale(1.2);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+    /* TABLE */
+    .table-wrapper {
+        overflow-x: auto;
+    }
+
+    .post-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+        .post-table th, .post-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            vertical-align: middle;
+        }
+
+    .post-content {
+        max-width: 300px;
+        word-wrap: break-word;
+    }
+
+    /* BUTTON */
+    .btn-approve-m, .btn-reject-m {
+        padding: 6px 12px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        margin: 2px 0;
+        font-weight: 600;
+        display: inline-block;
+    }
+
+    .btn-approve-m {
+        background: #4CAF50;
+        color: #fff;
+        transition: background 0.2s;
+    }
+
+        .btn-approve-m:hover {
+            background: #45a049;
+        }
+
+    .btn-reject-m {
+        background: #f44336;
+        color: #fff;
+        transition: background 0.2s;
+    }
+
+        .btn-reject-m:hover {
+            background: #e53935;
+        }
+
+    /* LIGHTBOX */
+    .fb-lightbox {
+        display: flex;
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.9);
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.25s ease;
+        z-index: 999999;
+    }
+
+        .fb-lightbox.show {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+    .fb-lb-content {
+        position: relative;
+        max-width: 95%;
+        max-height: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fb-lb-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: rgba(0,0,0,0.55);
+        color: #fff;
+        border: none;
+        padding: 8px 12px;
+        font-size: 20px;
+        border-radius: 8px;
+        cursor: pointer;
+        z-index: 10;
+    }
+</style>

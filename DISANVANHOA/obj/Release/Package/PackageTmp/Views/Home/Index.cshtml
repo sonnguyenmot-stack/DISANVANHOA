@@ -1,0 +1,258 @@
+﻿<!-- Slider -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<link href="~/Content/assets/styles/banner.css" rel="stylesheet" />
+<div class="swiper main_slider">
+    <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide" style="background-image:url('images/bg_5.jpg');">
+            <div class="slide_content">
+                <h6>Chào mừng đến với Tuyên Quang</h6>
+                <h1>AI bảo tồn di sản Tuyên Quang</h1>
+
+            </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="swiper-slide" style="background-image: url('images/thanhtuyen.jpg');">
+            <div class="slide_content">
+                <h6>Khám phá di sản</h6>
+                <h1>Bảo tồn văn hóa Tuyên Quang</h1>
+
+            </div>
+        </div>
+
+        <div class="swiper-slide" style="background-image: url('images/nahang.jpg');">
+            <div class="slide_content">
+                <h6>Hành trình khám phá vẻ đẹp văn hóa dân tộc Tuyên Quang</h6>
+                <h1>
+                    Giữ gìn và phát huy bản sắc văn hóa truyền thống Tuyên Quang
+                </h1>
+
+            </div>
+        </div>
+
+        <div class="swiper-slide" style="background-image: url('images/cotco.jpg');">
+            <div class="slide_content">
+                <h6>Tuyên Quang  </h6>
+                <h1>Nơi hội tụ tinh hoa văn hóa vùng Việt Bắc</h1>
+
+            </div>
+        </div>
+
+        <div class="swiper-slide" style="background-image: url('images/hanglungkhuynh.jpg');">
+            <div class="slide_content">
+                <h6>Khám phá di sản</h6>
+                <h1>
+                    Di sản văn hóa Tuyên Quang trong nhịp sống hiện đại hôm nay
+                </h1>
+
+            </div>
+        </div>
+
+        <div class="swiper-slide" style="background-image: url('images/tantrao.jpg');">
+            <div class="slide_content">
+                <h6>Khám phá di sản</h6>
+                <h1>
+                    Khám phá nét đẹp truyền thống trong lễ hội của Tuyên Quang
+                </h1>
+
+            </div>
+        </div>
+        <div class="swiper-slide" style="background-image: url('images/lolo.jpg');">
+            <div class="slide_content">
+                <h6>Tuyên Quang</h6>>
+                <h1>Vùng đất lưu giữ nhiều giá trị di sản quý</h1>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Nút điều hướng -->
+    <!--<div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>-->
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+
+<!-- Banner -->
+
+<div class="banner">
+    
+        <div class="best_sellers">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <div class="section_title new_arrivals_title">
+                            <h2>Giáo Trình </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="product_slider_container">
+                            <div class="owl-carousel owl-theme product_slider">
+
+                                @Html.Action("MenuIcon", "Menu")
+                            </div>
+
+                            <!-- Slider Navigation -->
+
+                            <div class="product_slider_nav_left product_slider_nav d-flex align-items-center justify-content-center flex-column">
+                                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                            </div>
+                            <div class="product_slider_nav_right product_slider_nav d-flex align-items-center justify-content-center flex-column">
+                                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- New Arrivals -->
+
+<div class="new_arrivals">
+    <div class="container">
+        @Html.Action("Heritage", "Menu")
+
+    </div>
+</div>
+
+<!-- Deal of the week -->
+
+<div class="deal_ofthe_week">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+                <div class="deal_ofthe_week_img">
+                    <img src="~/images/sale.jpg" alt="" width="504" height="540">
+                </div>
+            </div>
+
+            <div class="col-lg-6 text-right deal_ofthe_week_col">
+                <div class="deal_ofthe_week_content d-flex flex-column align-items-center float-right">
+
+                    <div class="section_title">
+                        <h2>Về Chúng Tôi</h2>
+
+                        <h3>AI Di Sản Tuyên Quang</h3>
+
+                        <p>
+                            Nền tảng AI Di sản Tuyên Quang số hóa di sản, hỗ trợ dạy học và bảo tồn văn hóa bền vững.
+                        </p>
+                    </div>
+
+                    <div class="red_button deal_ofthe_week_button">
+                        <a href="/tro-ly-ai">Hỏi Ngay</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- Best Sellers -->
+
+<div class="best_sellers">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <div class="section_title new_arrivals_title">
+                    <h2>Di tích lịch sử</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="product_slider_container">
+                    <div class="owl-carousel owl-theme product_slider">
+
+                        @Html.Action("Partial_Historicalrelics", "Menu")
+                    </div>
+
+                    <!-- Slider Navigation -->
+
+                    <div class="product_slider_nav_left product_slider_nav d-flex align-items-center justify-content-center flex-column">
+                        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                    </div>
+                    <div class="product_slider_nav_right product_slider_nav d-flex align-items-center justify-content-center flex-column">
+                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Benefit -->
+<!-- Blogs -->
+
+<div class="blogs">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <div class="section_title">
+                    <h2>Tin Tức </h2>
+                </div>
+            </div>
+        </div>
+        <div class="row blogs_container">
+            @Html.Action("Partial_News_Home", "News")
+        </div>
+    </div>
+</div>
+
+<!-- Newsletter -->
+<div class="newsletter">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                @*<div class="newsletter_text d-flex flex-column justify-content-center align-items-lg-start align-items-md-center text-center">
+                        <h4>Newsletter</h4>
+                        <p>Subscribe to our newsletter and get 20% off your first purchase</p>
+                    </div>*@
+            </div>
+            <div class="col-lg-6">
+                @*<form action="post">
+                        <div class="newsletter_form d-flex flex-md-row flex-column flex-xs-column align-items-center justify-content-lg-end justify-content-center">
+                            <input id="newsletter_email" type="email" placeholder="Your email" required="required" data-error="Valid email is required.">
+                            <button id="newsletter_submit" type="submit" class="newsletter_submit_btn trans_300" value="Submit">subscribe</button>
+                        </div>
+                    </form>*@
+            </div>
+        </div>
+    </div>
+</div>
+
+<link href="~/Content/assets/styles/rpshoingay.css" rel="stylesheet" />
+<script>
+    var swiper = new Swiper('.swiper', {
+        loop: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+</script>

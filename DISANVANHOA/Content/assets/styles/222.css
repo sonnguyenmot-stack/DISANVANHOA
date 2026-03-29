@@ -1,0 +1,46 @@
+﻿/* ===== RESPONSIVE ĐA NỀN TẢNG CHO TÀI LIỆU ===== */
+
+/* Mặc định (desktop & màn hình lớn) */
+.image_col iframe,
+.image_col embed {
+    width: 100%;
+    height: 80vh; /* chiếm 80% chiều cao màn hình */
+    border: none;
+}
+
+/* Ảnh */
+.image_col img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* ===== TABLET (iPad, tablet ngang/dọc) ===== */
+@media (max-width: 1024px) {
+    .image_col iframe,
+    .image_col embed {
+        height: 85vh;
+    }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+    .image_col iframe,
+    .image_col embed {
+        height: 90vh; /* gần full màn hình */
+        min-height: 500px;
+    }
+
+    .image_col .btn {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
+/* ===== MOBILE NHỎ (điện thoại cũ) ===== */
+@media (max-width: 480px) {
+    .image_col iframe,
+    .image_col embed {
+        height: 95vh;
+    }
+}

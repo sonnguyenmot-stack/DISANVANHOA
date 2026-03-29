@@ -1,0 +1,147 @@
+﻿@model DISANVANHOA.Models.EF.Question
+@{
+    ViewBag.Title = "Cập nhật câu hỏi";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+@section naviheader{
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="/admin/home" class="nav-link">Trang chủ</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="/admin/Question" class="nav-link">Câu hỏi</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="#" class="nav-link">Cập Nhật</a>
+        </li>
+    </ul>
+}
+
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Cập Nhật Câu Hỏi</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Câu Hỏi</a></li>
+                    <li class="breadcrumb-item active">Cập Nhật</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<!-- Main content -->
+<section class="content">
+
+    <!-- Default box -->
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">Thông tin câu hỏi</h3>
+        </div>
+        <div class="card-body">
+            <div class="bs-stepper-content">
+                @using (Html.BeginForm("Edit", "Question", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.ValidationSummary(true)
+                    <!-- your steps content here -->
+                    <div id="logins-part" class="content active dstepper-block" role="tabpanel" aria-labelledby="logins-part-trigger">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Tên danh mục</label>
+                            @Html.TextBoxFor(x => x.Text, new { @class = "form-control", @placeholder = "câu hỏi" })
+                            @Html.ValidationMessageFor(x => x.Text, null, new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Đáp Án A</label>
+                            @Html.TextBoxFor(x => x.OptionA, new { @class = "form-control", @placeholder = "đáp án A" })
+                            @Html.ValidationMessageFor(x => x.OptionA, null, new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Đáp Án B</label>
+                            @Html.TextBoxFor(x => x.OptionB, new { @class = "form-control", @placeholder = "đáp án B" })
+                            @Html.ValidationMessageFor(x => x.OptionA, null, new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Đáp Án C</label>
+                            @Html.TextBoxFor(x => x.OptionC, new { @class = "form-control", @placeholder = "đáp án C" })
+                            @Html.ValidationMessageFor(x => x.OptionC, null, new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Đáp Án D</label>
+                            @Html.TextBoxFor(x => x.OptionD, new { @class = "form-control", @placeholder = "đáp án D" })
+                            @Html.ValidationMessageFor(x => x.OptionD, null, new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group">
+                            <label>Đáp án đúng</label>
+                            @Html.DropDownListFor(x => x.CorrectAnswer,
+                                new List<SelectListItem>
+                                {
+                                    new SelectListItem { Text="A", Value="A" },
+                                    new SelectListItem { Text="B", Value="B" },
+                                    new SelectListItem { Text="C", Value="C" },
+                                    new SelectListItem { Text="D", Value="D" }
+                                }, "-- Chọn đáp án đúng --",
+                                new { @class = "form-control" })
+                            @Html.ValidationMessageFor(x => x.CorrectAnswer, null, new { @class = "text-danger" })
+                        </div>
+
+                        <div class="form-group">
+
+                            <button type="submit" class="btn btn-outline-success">Lưu</button>
+                            <a href="/admin/Question" class="btn btn-outline-warning">Quay lại</a>
+                        </div>
+                    </div>
+
+                }
+
+            </div>
+        </div>
+        <!-- /.card-body -->
+        <div class="card-footer">
+
+        </div>
+        <!-- /.card-footer-->
+    </div>
+    <!-- /.card -->
+
+</section>
+<!-- /.content -->
+
+@section  scripts{
+    <script>
+        $(document).ready(function () {
+            CKEDITOR.replace('txtDetail', {
+                customConfig: '/content/ckeditor/config.js',
+                extraAllowedContent: 'span',
+            });
+        });
+        function BrowseServer(field) {
+            var finder = new CKFinder();
+            finder.selectActionFunction = function (fileUrl) {
+                document.getElementById(field).value = fileUrl;
+            };
+            finder.popup();
+        }
+        function handleFileSelect(event) {
+            var fileInput = event.target;
+            var filePath = fileInput.value;
+            document.getElementById('txtFile').value = filePath; // Show the selected file path in the text box
+        }
+    </script>
+
+        <script src="~/Scripts/jsConvert.js"></script>
+    
+}
+
+
+
+

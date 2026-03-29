@@ -1,0 +1,194 @@
+﻿@model List<DISANVANHOA.Models.EF.QuestionDiSan>
+<link href="~/Content/assets/styles/gamedisan.css" rel="stylesheet" />
+<div id="gameMatchContainer">
+
+    <div id="startAreaMatch">
+        <h2>🧩 Ghép thẻ Di Sản Tuyên Quang</h2>
+        <div style="display:flex; justify-content:center; align-items:center; gap:15px;">
+            <button id="startBtnMatch" class="btn btn-primary btn-lg">Bắt đầu chơi</button>
+            <div class="cute-right">
+                🐰🎉
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Container game -->
+    <div id="quizContainerMatch" style="display:none; max-width:800px; margin:0 auto;">
+        <div class="progress mb-2">
+            <div id="progressBarMatch" class="progress-bar" role="progressbar" style="width:0%">0%</div>
+        </div>
+
+        <div id="cardsAreaMatch"></div>
+
+        <div id="timerMatch">
+            Thời gian: <span id="timeMatch">120</span>s
+        </div>
+    </div>
+
+    <!-- Kết quả -->
+    <div id="scoreAreaMatch" style="display:none; text-align:center;">
+        <h3>🎓 Bạn đã hoàn thành trò chơi!</h3>
+        <p>Bạn ghép đúng <span id="scoreMatch"></span> / 10</p>
+
+        <div style="margin:20px auto;">
+            <img src="~/images/cup.png" style="width:300px; border:5px solid gold; border-radius:15px;" />
+        </div>
+
+        <h4>Chứng nhận: <span style="color:blue;">Học sinh chăm chỉ</span></h4>
+        <button id="restartBtnMatch" class="btn btn-success">Chơi lại</button>
+    </div>
+
+    <!-- Âm thanh -->
+    <audio id="correctSoundMatch" src="~/Content/sounds/correct.mp3"></audio>
+    <audio id="wrongSoundMatch" src="~/Content/sounds/wrong.mp3"></audio>
+    <audio id="bgMusicMatch" src="~/Content/sounds/bg_music.mp3" loop></audio>
+    <audio id="celebrationSoundMatch" src="~/Content/sounds/celebration.mp3"></audio>
+</div>
+
+<!-- Thư viện confetti -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+
+    var questions = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model));
+
+    function shuffleArray(array){
+        for(let i=array.length-1;i>0;i--){
+            let j=Math.floor(Math.random()*(i+1));
+            [array[i],array[j]]=[array[j],array[i]];
+        }
+        return array;
+    }
+
+    function initGame(){
+        questions = shuffleArray(questions).slice(0,10); // Lấy 10 cặp
+        var score = 0;
+        var timeLeft = 120;
+        var timer;
+        var firstCard = null;
+
+        function startTimer(){
+            clearInterval(timer);
+            timer = setInterval(function(){
+                timeLeft--;
+                $("#timeMatch").text(timeLeft);
+                if(timeLeft<=0){
+                    clearInterval(timer);
+                    endGame();
+                }
+            },1000);
+        }
+
+        function updateProgress(){
+            var percent = (score/10)*100;
+            $("#progressBarMatch").css("width", percent+"%").text(Math.round(percent)+"%");
+        }
+
+        function endGame(){
+            clearInterval(timer);
+            $("#quizContainerMatch").fadeOut(500,function(){
+                $("#scoreAreaMatch").fadeIn(500);
+                $("#scoreMatch").text(score);
+                $("#bgMusicMatch")[0].pause();
+                $("#celebrationSoundMatch")[0].play();
+
+                // Pháo hoa confetti
+                var duration = 2 * 1000;
+                var end = Date.now() + duration;
+                (function frame(){
+                    confetti({ particleCount: 3, angle: 60, spread: 55, origin: { x: 0 } });
+                    confetti({ particleCount: 3, angle: 120, spread: 55, origin: { x: 1 } });
+                    if (Date.now() < end) requestAnimationFrame(frame);
+                })();
+            });
+        }
+
+        function showCards(){
+            var cards = [];
+            questions.forEach(q=>{
+                cards.push({type:"img", content:q.Img1, name:q.Name});
+                cards.push({type:"name", content:q.Name, name:q.Name});
+            });
+            cards = shuffleArray(cards);
+
+            var html = '';
+            cards.forEach(c=>{
+                html += `<div class="cardMatch ${c.type=='img'?'imgCard':'nameCard'}" data-name="${c.name}">
+                            ${c.type=='img'?`<img src="${c.content}" />`:c.content}
+                         </div>`;
+            });
+            $("#cardsAreaMatch").html(html);
+            startTimer();
+            updateProgress();
+        }
+
+        // Click ghép thẻ với toggle active khi nhấn 2 lần cùng thẻ
+        $(document).off("click",".cardMatch").on("click",".cardMatch",function(){
+            if($(this).hasClass("matched")) return;
+
+            if($(this).hasClass("active")){
+                $(this).removeClass("active"); // nhấn 2 lần -> bỏ active
+                if(firstCard && firstCard.is($(this))){
+                    firstCard = null;
+                }
+                return;
+            }
+
+            $(this).addClass("active");
+
+            if(!firstCard){
+                firstCard = $(this);
+            } else {
+                var secondCard = $(this);
+                var isMatch = firstCard.data("name") === secondCard.data("name") &&
+                              firstCard.hasClass("imgCard") !== secondCard.hasClass("imgCard");
+
+                if(isMatch){
+                    firstCard.addClass("matched").removeClass("active");
+                    secondCard.addClass("matched").removeClass("active");
+                    $("#correctSoundMatch")[0].play();
+                    score++;
+                    updateProgress();
+                    if(score>=10) setTimeout(endGame,500);
+                } else {
+                    $("#wrongSoundMatch")[0].play();
+                    setTimeout(function(){
+                        firstCard.removeClass("active");
+                        secondCard.removeClass("active");
+                    },700);
+                }
+                firstCard = null;
+            }
+        });
+
+        // Bắt đầu game
+        $("#startBtnMatch").off("click").on("click",function(){
+            $("#startAreaMatch").fadeOut(300,function(){
+                $("#quizContainerMatch").fadeIn(300);
+                score=0; timeLeft=120;
+                $("#bgMusicMatch")[0].play();
+                showCards();
+            });
+        });
+
+        // Chơi lại
+        $("#restartBtnMatch").off("click").on("click",function(){
+            $("#scoreAreaMatch").fadeOut(300,function(){
+                $("#quizContainerMatch").fadeIn(300);
+                score=0; timeLeft=120;
+                $("#bgMusicMatch")[0].play();
+                showCards();
+            });
+        });
+
+        showCards();
+    }
+
+    initGame();
+});
+</script>
+
+

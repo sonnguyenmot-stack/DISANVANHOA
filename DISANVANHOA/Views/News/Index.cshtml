@@ -1,0 +1,66 @@
+﻿@model PagedList.PagedList<DISANVANHOA.Models.EF.News>
+@using PagedList.Mvc;
+@using PagedList;
+@{
+    ViewBag.Title = "Index";
+}
+
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+
+<link rel="stylesheet" type="text/css" href="~/Content/assets/styles/main_styles.css">
+<link href="~/Content/assets/styles/tintuc.css" rel="stylesheet" />
+
+<div class="container news_section_container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="title-news " style="text-align:center"> Tin tức</h2>
+        </div>
+    </div>
+
+    @if (Model != null && Model.Any())
+    {
+        foreach (var item in Model)
+        {
+            <div class="row row-item-new">
+                <div class="col-md-3">
+                    <div class="img-box">
+                        <a href="/@item.Alias-n@(item.Id)" title="@item.Title">
+                            <img src="@item.Image" alt="@item.Title" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-9">
+                    <div class="content-box">
+                        <h3>
+                            <a href="/@item.Alias-n@(item.Id)" title="@item.Title">
+                                @item.Title
+                            </a>
+                        </h3>
+
+                        <!-- Ngày giờ đăng -->
+                        <div class="news-meta">
+                            <i class="fa fa-clock"></i>
+                            @item.CreatedDate.ToString("dd/MM/yyyy")
+                        </div>
+
+                        <div class="description-box">
+                            @item.Description
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+        <div class="row">
+            <div class="col-6"></div>
+            <div class="col-6" style="text-align:right;">
+                @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+            </div>
+        </div>
+    }
+
+</div>

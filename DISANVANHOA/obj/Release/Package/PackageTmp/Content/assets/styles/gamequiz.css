@@ -1,0 +1,200 @@
+﻿
+/* Container */
+#quizContainer {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px 30px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Progress bar */
+.progress {
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, #4caf50, #81c784);
+    text-align: center;
+    font-weight: bold;
+    line-height: 25px;
+    transition: width 0.5s;
+}
+
+/* Câu hỏi */
+#questionArea p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Options */
+#options {
+    display: flex;
+    flex-direction: column;
+}
+
+.option {
+    display: block;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 16px;
+}
+
+    .option:hover {
+        background-color: #f0f8ff;
+        border-color: #4caf50;
+    }
+
+    /* Input radio hidden */
+    .option input[type="radio"] {
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+/* Timer */
+#timer {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: right;
+    color: #ff5722;
+}
+
+/* Buttons */
+#startBtn, #restartBtn {
+    font-size: 18px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+    #startBtn:hover {
+        background-color: #0056b3;
+        color: #fff;
+    }
+
+    #restartBtn:hover {
+        background-color: #388e3c;
+        color: #fff;
+    }
+
+/* Kết quả */
+#scoreArea h3 {
+    font-size: 24px;
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+#scoreArea h4 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#scoreArea img {
+    display: block;
+    margin: 10px auto;
+    max-width: 300px;
+}
+
+/* ==========================
+   START AREA GAME - Cute Style
+   ========================== */
+#startArea {
+    text-align: center;
+    margin: 50px auto;
+    padding: 40px 20px;
+    max-width: 450px;
+    background: linear-gradient(135deg, #fff0e5, #e0f7ff); /* nền pastel */
+    border-radius: 30px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    #startArea:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    }
+
+    /* Tiêu đề cute */
+    #startArea h2 {
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+        font-size: 1.8rem;
+        color: #ff6f91;
+        margin-bottom: 25px;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    }
+
+/* Nút bắt đầu cute */
+#startBtn {
+    background: linear-gradient(135deg, #ff9ad5, #ff71c8);
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px 35px;
+    border-radius: 50px;
+    box-shadow: 0 8px 20px rgba(255,105,180,0.4);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+    #startBtn:hover {
+        background: linear-gradient(135deg, #ff71c8, #ff9ad5);
+        transform: scale(1.1);
+        box-shadow: 0 12px 25px rgba(255,105,180,0.5);
+    }
+
+/* Icon cute bên phải nút */
+.cute-right {
+    font-size: 2rem;
+    animation: bounce 1s infinite alternate;
+    transform-origin: bottom center;
+}
+
+/* Hiệu ứng bounce cute */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Responsive cho điện thoại */
+@media (max-width:600px) {
+    #startArea {
+        margin: 30px 15px;
+        padding: 30px 15px;
+    }
+
+        #startArea h2 {
+            font-size: 1.5rem;
+        }
+
+    #startBtn {
+        font-size: 1rem;
+        padding: 10px 25px;
+    }
+
+    .cute-right {
+        font-size: 1.5rem;
+    }
+}
+
+
+

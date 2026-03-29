@@ -1,0 +1,161 @@
+﻿@model IEnumerable<DISANVANHOA.Models.EF.General>
+@{
+    ViewBag.Title = "Giáo Trình";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@section naviheader{
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button">
+                <i class="fas fa-bars"></i>
+            </a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="/admin/home" class="nav-link">Trang chủ</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="/admin/General" class="nav-link">Giáo Trình</a>
+        </li>
+    </ul>
+}
+
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6"><h1>Quản Lý Giáo Trình</h1></div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="/admin/home">Trang Chủ</a></li>
+                    <li class="breadcrumb-item active">Danh sách Giáo Trình</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content">
+    <div class="card">
+
+        <!-- HEADER -->
+        <div class="card-header d-flex justify-content-between align-items-center flex-wrap">
+            <h3 class="card-title">Danh sách Giáo Trình</h3>
+            <a href="/admin/General/add" class="btn btn-outline-success btn-sm">Thêm mới</a>
+        </div>
+
+        <div class="card-body">
+
+            <!-- DESKTOP TABLE -->
+            <div class="table-responsive d-none d-sm-block">
+                <table class="table table-hover table-bordered mb-0">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>STT</th>
+                            <th>Tên</th>
+                            <th>Hình ảnh</th>
+                            <th>Mô tả</th>
+                            <th>Ngày tạo</th>
+                            <th>Ngày sửa</th>
+                            <th>Chức năng</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @if (Model != null && Model.Any())
+                        {
+                            var i = 1;
+                            foreach (var item in Model)
+                            {
+                                <tr id="trow_@item.Id">
+                                    <td>@i</td>
+                                    <td>@item.Title</td>
+                                    <td>
+                                        <img src="@Url.Content(item.Icon ?? "~/Content/images/noimage.png")" width="50" />
+                                    </td>
+                                    <td>@item.Description</td>
+                                    <td>
+                                        @item.CreatedDate.ToString("dd/MM/yyyy") <br />
+                                        @item.CreatedDate.ToString("HH:mm:ss")
+                                    </td>
+                                    <td>
+                                        @item.ModifiedDate.ToString("dd/MM/yyyy") <br />
+                                        @item.ModifiedDate.ToString("HH:mm:ss")
+                                    </td>
+                                    <td>
+                                        <a href="/admin/General/edit/@item.Id" class="btn btn-sm btn-outline-warning mb-1">Sửa</a>
+                                        <a href="#" data-id="@item.Id" class="btn btn-sm btn-outline-danger btnDelete">Xóa</a>
+                                    </td>
+                                </tr>
+                                i++;
+                            }
+                        }
+                        else
+                        {
+                            <tr><td colspan="7" class="text-center">Không có bản ghi nào!</td></tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- MOBILE RESPONSIVE LIST -->
+            <div class="d-block d-sm-none">
+                @if (Model != null && Model.Any())
+                {
+                    var i = 1;
+                    foreach (var item in Model)
+                    {
+                        <div class="card mb-2 p-2 border">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div style="width: 70%;">
+                                    <strong>@item.Title</strong> <br />
+                                    <img src="@Url.Content(item.Icon ?? "~/Content/images/noimage.png")"
+                                         width="100" class="my-1" />
+
+                                    <div class="small text-muted">
+                                        <div>Mô tả: @item.Description</div>
+                                        <div>Tạo: @item.CreatedDate.ToString("dd/MM/yyyy HH:mm:ss")</div>
+                                        <div>Sửa: @item.ModifiedDate.ToString("dd/MM/yyyy HH:mm:ss")</div>
+                                    </div>
+                                </div>
+
+                                <div class="text-right">
+                                    <a href="/admin/General/edit/@item.Id" class="btn btn-sm btn-outline-warning mb-1">Sửa</a> <br />
+                                    <a href="#" data-id="@item.Id" class="btn btn-sm btn-outline-danger btnDelete">Xóa</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        i++;
+                    }
+                }
+                else
+                {
+                    <div class="alert alert-warning">Không có bản ghi nào!</div>
+                }
+            </div>
+
+        </div>
+    </div>
+</section>
+
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            $('body').on('click', '.btnDelete', function () {
+                var id = $(this).data("id");
+                if (confirm('Bạn có muốn xóa bản ghi này không?')) {
+                    $.ajax({
+                        url: '/admin/General/delete',
+                        type: 'POST',
+                        data: { id: id },
+                        success: function (rs) {
+                            if (rs.success) {
+                                $('#trow_' + id).remove();
+                            }
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+}

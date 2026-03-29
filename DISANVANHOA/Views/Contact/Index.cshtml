@@ -1,0 +1,88 @@
+﻿@model IEnumerable<DISANVANHOA.Models.EF.Contact>
+<link rel="stylesheet" type="text/css" href="~/Content/assets/styles/contact_styles.css">
+
+
+<link href="~/Content/assets/styles/bando.css" rel="stylesheet" />
+<div class="container contact_container">
+    <div class="row">
+        <div class="col">
+
+            <!-- Breadcrumbs -->
+
+            <div class="breadcrumbs d-flex flex-row align-items-center">
+                <ul>
+                    <li><a href="/">Trang chủ</a></li>
+                    <li class="active"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Bản Đồ</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Map Container -->
+    @*<div class="contact_container">*@
+
+    <!-- Thanh tìm kiếm -->
+    <div class="search_bar_wrapper">
+        <input type="text" id="searchLocation" placeholder="Nhập địa điểm cần tìm..." />
+        <button class="btn-search-custom" onclick="searchMap()">Tìm</button>
+    </div>
+
+    <!-- Bản đồ -->
+    <div class="map_container">
+        <iframe id="mapIframe"
+                src="https://www.google.com/maps?q=Trường+THPT+Phú+Lương&output=embed"
+                allowfullscreen
+                loading="lazy">
+        </iframe>
+    </div>
+
+    @*</div>*@
+
+
+    <!-- Contact Us -->
+
+
+</div>
+
+<!-- Newsletter -->
+@*<div class="newsletter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="newsletter_text d-flex flex-column justify-content-center align-items-lg-start align-items-md-center text-center">
+                        <h4>Newsletter</h4>
+                        <p>Subscribe to our newsletter and get 20% off your first purchase</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form action="post">
+                        <div class="newsletter_form d-flex flex-md-row flex-column flex-xs-column align-items-center justify-content-lg-end justify-content-center">
+                            <input id="newsletter_email" type="email" placeholder="Your email" required="required" data-error="Valid email is required.">
+                            <button id="newsletter_submit" type="submit" class="newsletter_submit_btn trans_300" value="Submit">subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>*@
+@section scripts{
+    <script src="~/Content/assets/js/contact_custom.js"></script>
+
+    <script>
+        function searchMap() {
+            var location = document.getElementById("searchLocation").value;
+            if (location.trim() === "") {
+                alert("Vui lòng nhập địa điểm!");
+                return;
+            }
+
+            var mapFrame = document.getElementById("mapIframe");
+
+            // Encode để tránh lỗi URL
+            var encoded = encodeURIComponent(location);
+            // Thay đổi bản đồ
+            mapFrame.src = "https://www.google.com/maps?q=" + encoded + "&output=embed";
+        }
+    </script>
+}

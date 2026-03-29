@@ -1,0 +1,17 @@
+﻿@model IEnumerable<DISANVANHOA.Models.EF.Category>
+@if (Model != null && Model.Any())
+{
+    foreach (var item in Model)
+    {
+        if (item.Alias.Equals("trang-chu"))
+        {
+            item.Alias = "";
+        }
+        if (!string.IsNullOrEmpty(item.link))
+        {
+            item.Alias = item.link;
+        }
+        <li class="menu_item"><a href="/@item.Alias">@item.Title</a></li>
+    }
+}
+

@@ -1,0 +1,147 @@
+﻿@model IEnumerable<DISANVANHOA.Models.EF.DocumentCategory>
+
+@{
+    ViewBag.Title = "Địa Điểm";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/clients/dist/css/rps.css" rel="stylesheet" />
+
+@section naviheader{
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="/admin/home" class="nav-link">Trang chủ</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="/admin/DocumentCategory" class="nav-link">@ViewBag.Title</a>
+        </li>
+    </ul>
+}
+
+<!-- Content Header -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Quản Lý Địa Điểm</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="/admin/home">Trang Chủ</a></li>
+                    <li class="breadcrumb-item active">@ViewBag.Title</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Main content -->
+<section class="content">
+    <div class="card">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <h3 class="card-title">Danh sách địa điểm</h3>
+            <a href="/admin/DocumentCategory/add" class="btn btn-outline-success btn-sm">Thêm mới</a>
+        </div>
+
+        <div class="card-body">
+            @if (Model != null && Model.Any())
+            {
+                <!-- Desktop Table -->
+                <div class="table-responsive d-none d-sm-block">
+                    <table class="table table-hover table-bordered mb-0">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>STT</th>
+                                <th>Tên địa điểm</th>
+                                <th>Mô tả</th>
+                                <th>Ngày Tạo</th>
+                                <th>Ngày Sửa</th>
+                                <th>Chức Năng</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @{
+                                var i = 1;
+                                foreach (var item in Model)
+                                {
+                                    <tr id="trow_@item.Id">
+                                        <td>@i</td>
+                                        <td>@item.Title</td>
+                                        <td>@item.Description</td>
+                                        <td>
+                                            @item.CreatedDate.ToString("dd/MM/yyyy") <br />
+                                        @item.CreatedDate.ToString("HH:mm:ss")
+                                    </td>
+                                    <td>
+                                        @item.ModifiedDate.ToString("dd/MM/yyyy") <br />
+                                    @item.ModifiedDate.ToString("HH:mm:ss")
+                                </td>
+                                <td class="text-nowrap">
+                                    <a href="/admin/DocumentCategory/edit/@item.Id" class="btn btn-sm btn-outline-warning mb-1">Sửa</a>
+                                    <a href="#" data-id="@item.Id" class="btn btn-sm btn-outline-danger btnDelete mb-1">Xóa</a>
+                                </td>
+                            </tr>
+                            i++;
+                        }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Mobile Card List -->
+                <div class="d-block d-sm-none">
+                    @foreach (var item in Model)
+                    {
+                        <div class="card mb-2 p-2 border">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div>
+                                    <strong>@item.Title</strong> <br />
+                                    Mô tả: @item.Description <br />
+                                    Tạo: @item.CreatedDate.ToString("dd/MM/yyyy HH:mm:ss") <br />
+                                    Sửa: @item.ModifiedDate.ToString("dd/MM/yyyy HH:mm:ss")
+                                </div>
+                                <div class="mt-1">
+                                    <a href="/admin/DocumentCategory/edit/@item.Id" class="btn btn-sm btn-outline-warning mb-1">Sửa</a><br />
+                                    <a href="#" data-id="@item.Id" class="btn btn-sm btn-outline-danger btnDelete">Xóa</a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
+            else
+            {
+                <div class="alert alert-warning">Không có bản ghi nào!</div>
+            }
+        </div>
+    </div>
+</section>
+
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            $('body').on('click', '.btnDelete', function () {
+                var id = $(this).data("id");
+                if (confirm('Bạn có muốn xóa bản ghi này không?')) {
+                    $.ajax({
+                        url: '/admin/DocumentCategory/delete',
+                        type: 'POST',
+                        data: { id: id },
+                        success: function (rs) {
+                            if (rs.success) {
+                                $('#trow_' + id).remove();
+                            } else {
+                                alert('Xóa không thành công!');
+                            }
+                        },
+                        error: function () {
+                            alert('Lỗi server, vui lòng thử lại!');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+}

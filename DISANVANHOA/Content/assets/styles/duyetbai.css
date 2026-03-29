@@ -1,0 +1,240 @@
+﻿/* ============================= */
+/*          TITLE PAGE           */
+/* ============================= */
+
+.page-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 25px;
+}
+
+
+/* ============================= */
+/*           TABLE UI            */
+/* ============================= */
+
+.table-wrapper {
+    background: #fff;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.post-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #222;
+}
+
+    .post-table thead {
+        background: #f3f3f3;
+    }
+
+        .post-table thead th {
+            padding: 14px;
+            font-size: 15px;
+            font-weight: 700;
+            color: #111;
+        }
+
+    .post-table tbody tr {
+        transition: background 0.2s ease;
+    }
+
+        .post-table tbody tr:hover {
+            background: #fafafa;
+        }
+
+    .post-table tbody td {
+        padding: 14px;
+        font-size: 15px;
+        color: #222;
+    }
+
+/* Nội dung bài viết */
+.post-content {
+    max-width: 420px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Media preview */
+.media-thumb {
+    max-width: 140px;
+    max-height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+
+/* ============================= */
+/*        ACTION BUTTONS         */
+/* ============================= */
+
+.action-col {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Nút chung */
+.btn-approve-m,
+.btn-reject-m {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+/* DUYỆT - XANH */
+.btn-approve-m {
+    background: #28a745;
+    box-shadow: 0 3px 10px rgba(40,167,69,0.25);
+}
+
+    .btn-approve-m:hover {
+        background: #218838;
+        transform: translateY(-2px);
+    }
+
+/* LOẠI BỎ - ĐỎ */
+.btn-reject-m {
+    background: #dc3545;
+    box-shadow: 0 3px 10px rgba(220,53,69,0.25);
+}
+
+    .btn-reject-m:hover {
+        background: #c82333;
+        transform: translateY(-2px);
+    }
+
+
+/* ============================= */
+/*        SUCCESS ALERT          */
+/* ============================= */
+
+.custom-alert {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+/* ============================= */
+/* RESPONSIVE TỐI ƯU MỌI NỀN TẢNG */
+/* ============================= */
+
+/* Tablet và Mobile */
+@media (max-width: 992px) {
+
+    .table-wrapper {
+        padding: 16px;
+        border-radius: 12px;
+    }
+
+    .post-table thead {
+        display: none; /* Ẩn header cho bản mobile */
+    }
+
+    .post-table tbody tr {
+        display: block;
+        margin-bottom: 15px;
+        background: #fff;
+        border-radius: 12px;
+        padding: 14px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    }
+
+    .post-table tbody td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 5px;
+        position: relative;
+        font-size: 14px;
+        border-bottom: 1px solid #eee;
+    }
+
+        .post-table tbody td:last-child {
+            border-bottom: none;
+        }
+
+        /* Tên cột mô phỏng lại header */
+        .post-table tbody td::before {
+            content: attr(data-label);
+            font-weight: 700;
+            color: #333;
+            min-width: 120px;
+            text-transform: none;
+        }
+
+    /* Nội dung */
+    .post-content {
+        max-width: 100%;
+        white-space: normal;
+        overflow: visible;
+        text-overflow: unset;
+    }
+
+    /* Media */
+    .media-thumb {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Action column */
+    .action-col {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .btn-approve-m,
+    .btn-reject-m {
+        width: 48%;
+        padding: 10px 0;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+}
+
+/* Mobile nhỏ */
+@media (max-width: 576px) {
+    .action-col {
+        flex-direction: column;
+    }
+
+    .btn-approve-m,
+    .btn-reject-m {
+        width: 100%;
+    }
+}
+
+/* Mặc định cho Desktop (giữ nguyên) */
+.news_section_container {
+    margin-top: 170px;
+}
+
+/* Giảm margin-top khi màn hình nhỏ hơn 768px (mobile/tablet) */
+@media (max-width: 768px) {
+    .news_section_container {
+        margin-top: 110px !important;
+    }
+}
+
+/* Tối ưu hơn cho điện thoại nhỏ (<480px) */
+@media (max-width: 480px) {
+    .news_section_container {
+        margin-top: 90px !important;
+    }
+}
+

@@ -1,0 +1,417 @@
+﻿@model PagedList.IPagedList<DISANVANHOA.Models.EF.Post>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "Cộng Đồng Chat";
+}
+
+<link href="~/Content/assets/styles/congdongchat.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="~/Content/assets/styles/single_styles.css">
+<link rel="stylesheet" type="text/css" href="~/Content/assets/styles/single_responsive.css">
+<link href="~/Content/assets/styles/thongbao.css" rel="stylesheet" />
+
+<div class="container single_product_container">
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumbs d-flex flex-row align-items-center">
+        <ul>
+            <li><a href="@Url.Action("Index", "Home")">Trang chủ</a></li>
+            <li><a><i class="fa fa-angle-right" aria-hidden="true"></i>Cộng Đồng</a></li>
+        </ul>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs_section_container">
+        <div class="row">
+            <div class="col">
+                <ul class="tabs d-flex flex-sm-row flex-column align-items-left justify-content-center">
+                    <li class="tab active" data-active-tab="tab_1"><span>Cộng Đồng</span></li>
+                    <li class="tab" data-active-tab="tab_2"><span>Thử Thách 1</span></li>
+                    <li class="tab" data-active-tab="tab_4"><span>Thử Thách 2</span></li>
+                    <li class="tab" data-active-tab="tab_3"><span>Thử Thách 3</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+
+                <!-- TAB 1: Cộng Đồng -->
+                <div id="tab_1" class="tab_container active">
+                    <div class="row">
+
+                        <!-- Left: Tạo bài -->
+                        <div class="col-lg-4">
+                            <div class="create-post-card" id="createPostCard">
+                                @using (Html.BeginForm("CreatePost", "Community", FormMethod.Post, new { enctype = "multipart/form-data", @id = "createPostForm" }))
+                                {
+                                    @Html.AntiForgeryToken()
+
+                                    <div class="create-post-header d-flex">
+                                        <div class="create-post-avatar"></div>
+                                        <div style="flex:1">
+                                            <input type="text" name="author" class="form-control mb-2" placeholder="Tên của bạn" required />
+                                            <input type="password" name="password" class="form-control mb-2" placeholder="Mật khẩu cho bài viết" required />
+                                        </div>
+                                    </div>
+
+                                    <textarea name="content" id="postContent" class="post-input form-control" placeholder="Bạn đang nghĩ gì?" required></textarea>
+
+                                    <div class="post-action-bar d-flex align-items-center mt-2" style="gap:8px;">
+                                        <button type="button" class="action-btn btn btn-light" id="btnEmoji">😊</button>
+                                        <button type="button" class="action-btn btn btn-outline-secondary" id="btnImage"><i class="fa fa-image"></i></button>
+                                        <button type="button" class="action-btn btn btn-outline-secondary" id="btnVideo"><i class="fa fa-video-camera"></i></button>
+                                        <button type="submit" id="btnSubmitPost" class="btn btn-pink ms-auto">
+                                            <span>Đăng bài</span>
+                                        </button>
+                                        <style>
+                                            #btnSubmitPost {
+                                                width: 315px; /* chỉnh theo ý muốn */
+                                            }
+
+                                        </style>
+                                    </div>
+
+                                    if (!(User != null && User.Identity != null && User.Identity.IsAuthenticated && User.IsInRole("GiaoVien")))
+                                    {
+                                        <p class="text-warning mt-2"><small><strong>Lưu ý:</strong> Bài đăng của bạn sẽ được gửi đi và chỉ hiển thị khi giáo viên duyệt.</small></p>
+                                    }
+
+                                    <input type="file" id="mediaInput" name="media" accept="image/*,video/*" multiple style="display:none;" />
+                                    <div id="previewMedia" class="mt-2" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:8px;"></div>
+                                }
+                            </div>
+                        </div>
+
+                        <!-- Right: Danh sách bài -->
+                        <div class="col-lg-8">
+                            @foreach (var post in Model)
+                            {
+                                <div class="post-card mb-3 p-3" data-id="@post.Id">
+                                    <div class="post-header d-flex justify-content-between align-items-start">
+                                        <div>
+                                            <strong>@post.Author</strong>
+                                            <div><small class="text-muted">@post.CreatedAt.ToString("g")</small></div>
+                                        </div>
+                                        <div class="dropdown">
+                                            <button class="btn btn-light btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown">&#8942;</button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item edit-post" href="#" data-id="@post.Id">Sửa</a></li>
+                                                <li><a class="dropdown-item delete-post" href="#" data-id="@post.Id">Xóa</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="post-body mt-2">
+                                        <p style="white-space:pre-wrap;">@post.Content</p>
+
+                                        <div class="post-media-list mt-2">
+                                            @{
+                                                var mediaList = new List<dynamic>();
+                                                if (post.MediaFiles != null && post.MediaFiles.Any())
+                                                {
+                                                    foreach (var mf in post.MediaFiles)
+                                                    {
+                                                        var ext = System.IO.Path.GetExtension(mf.FilePath).ToLower();
+                                                        var type = (new[] { ".mp4", ".webm", ".ogg" }.Contains(ext)) ? "video" : "image";
+                                                        mediaList.Add(new { Path = Url.Content(mf.FilePath), Type = type });
+                                                    }
+                                                }
+                                                else if (!string.IsNullOrEmpty(post.MediaPath))
+                                                {
+                                                    var ext = System.IO.Path.GetExtension(post.MediaPath).ToLower();
+                                                    var type = (new[] { ".mp4", ".webm", ".ogg" }.Contains(ext)) ? "video" : "image";
+                                                    mediaList.Add(new { Path = Url.Content(post.MediaPath), Type = type });
+                                                }
+
+                                                var totalMedia = mediaList.Count;
+                                                var maxShow = 4;
+                                            }
+
+                                            @if (totalMedia > 0)
+                                            {
+                                                <div class="post-media-grid count-@((totalMedia>4)?4:totalMedia)">
+                                                    @for (int i = 0; i < totalMedia; i++)
+                                                    {
+                                                        var item = mediaList[i];
+                                                        <div class="media-item"
+                                                             data-post="@post.Id"
+                                                             data-src="@item.Path"
+                                                             data-type="@item.Type"
+                                                             style="@(i >= maxShow ? "display:none;" : "")">
+
+                                                            @if (item.Type == "video")
+                                                            {
+                                                                <video muted><source src="@item.Path" /></video>
+                                                            }
+                                                            else
+                                                            {
+                                                                <img src="@item.Path" alt="media" />
+                                                            }
+
+                                                            @if (i == maxShow - 1 && totalMedia > maxShow)
+                                                            {
+                                                                <div class="media-overlay">+@(totalMedia-maxShow)</div>
+                                                            }
+                                                        </div>
+                                                    }
+                                                </div>
+
+                                            }
+                                        </div>
+
+                                        <!-- Comment -->
+                                        <div class="comment-box mt-3">
+                                            @using (Html.BeginForm("CreateComment", "Community", FormMethod.Post, new { @class = "comment-form" }))
+                                            {
+                                                @Html.AntiForgeryToken()
+                                                <input type="hidden" name="postId" value="@post.Id" />
+                                                <input type="text" name="author" class="comment-input mb-2 form-control" placeholder="Tên của bạn" required />
+                                                <div style="display:flex; gap:8px;">
+                                                    <input type="text" name="content" class="comment-input comment-content form-control" placeholder="Viết bình luận..." required />
+                                                    <button type="submit" class="action-btn btn btn-secondary">Bình luận</button>
+                                                </div>
+                                                <div class="comment-emoji mt-2">
+                                                    <!-- Cảm xúc -->
+                                                    <span class="emoji-small">😀</span>
+                                                    <span class="emoji-small">😃</span>
+                                                    <span class="emoji-small">😄</span>
+                                                    <span class="emoji-small">😁</span>
+                                                    <span class="emoji-small">😆</span>
+                                                    <span class="emoji-small">😂</span>
+                                                    <span class="emoji-small">🤣</span>
+                                                    <span class="emoji-small">😊</span>
+                                                    <span class="emoji-small">😇</span>
+                                                    <span class="emoji-small">🙂</span>
+                                                    <span class="emoji-small">🙃</span>
+                                                    <span class="emoji-small">😉</span>
+                                                    <span class="emoji-small">😍</span>
+                                                    <span class="emoji-small">🥰</span>
+                                                    <span class="emoji-small">😘</span>
+                                                    <span class="emoji-small">😗</span>
+                                                    <span class="emoji-small">😋</span>
+                                                    <span class="emoji-small">😜</span>
+                                                    <span class="emoji-small">😝</span>
+                                                    <span class="emoji-small">🤪</span>
+                                                    <span class="emoji-small">😎</span>
+                                                    <span class="emoji-small">🤩</span>
+                                                    <span class="emoji-small">😏</span>
+                                                    <span class="emoji-small">😞</span>
+                                                    <span class="emoji-small">😔</span>
+                                                    <span class="emoji-small">😟</span>
+                                                    <span class="emoji-small">😢</span>
+                                                    <span class="emoji-small">😭</span>
+                                                    <span class="emoji-small">😡</span>
+                                                    <span class="emoji-small">🤬</span>
+                                                    <span class="emoji-small">😱</span>
+                                                    <span class="emoji-small">😳</span>
+                                                    <span class="emoji-small">🤯</span>
+                                                    <span class="emoji-small">🥵</span>
+                                                    <span class="emoji-small">🥶</span>
+                                                    <span class="emoji-small">😴</span>
+                                                    <span class="emoji-small">🤤</span>
+                                                    <span class="emoji-small">🤫</span>
+                                                    <span class="emoji-small">🤭</span>
+                                                    <span class="emoji-small">🤗</span>
+                                                    <span class="emoji-small">🫂</span>
+                                                    <span class="emoji-small">💪</span>
+                                                    <span class="emoji-small">🙏</span>
+                                                    <span class="emoji-small">💖</span>
+                                                    <span class="emoji-small">✨</span>
+                                                    <span class="emoji-small">🎉</span>
+                                                </div>
+
+
+                                            }
+                                        </div>
+
+                                        <!-- Comment list -->
+                                        <div class="mt-3">
+                                            @if (post.Comments != null)
+                                            {
+                                                foreach (var c in post.Comments.OrderBy(x => x.CreatedAt))
+                                                {
+                                                    <div class="comment-item mb-2 p-2">
+                                                        <strong>@c.Author</strong> <small class="text-muted">— @c.CreatedAt.ToString("g")</small>
+                                                        <p style="white-space:pre-wrap;">@c.Content</p>
+                                                    </div>
+                                                }
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+
+                            <!-- Pagination -->
+                            <div class="mt-3">
+                                @Html.PagedListPager(Model, page => Url.Action("Index", new { page }), new PagedListRenderOptions())
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab_2" class="tab_container"></div>
+                <div id="tab_3" class="tab_container"></div>
+                <div id="tab_4" class="tab_container"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modals & Lightbox -->
+<div class="modal fade" id="passwordModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header"><h5 class="modal-title">Nhập mật khẩu</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+            <div class="modal-body"><input type="password" id="postPassword" class="form-control" placeholder="Mật khẩu"></div>
+            <div class="modal-footer">
+                <button type="button" id="confirmAction" class="btn btn-primary">Xác nhận</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="mediaLightbox" class="fb-lightbox">
+    <div class="fb-lb-content">
+        <button class="fb-lb-close">✕</button>
+        <button class="fb-lb-prev">‹</button>
+        <button class="fb-lb-next">›</button>
+        <div class="fb-lb-media"></div>
+    </div>
+</div>
+
+<div id="approvalPopup" style="display:none;">
+    <div class="popup-backdrop"></div>
+    <div class="popup-box">
+        <h4>Thông báo</h4>
+        <p>Bài đăng của bạn sẽ được gửi đi và chỉ hiển thị khi giáo viên duyệt.</p>
+        <button id="popupOkBtn" class="btn btn-primary">OK</button>
+    </div>
+</div>
+
+<div id="globalEmojiPicker" class="emoji-picker">
+    <!-- Smileys & Emotion -->
+    <div class="emoji">😀</div><div class="emoji">😃</div><div class="emoji">😄</div><div class="emoji">😁</div>
+    <div class="emoji">😆</div><div class="emoji">😅</div><div class="emoji">😂</div><div class="emoji">🤣</div>
+    <div class="emoji">😊</div><div class="emoji">😇</div><div class="emoji">🙂</div><div class="emoji">🙃</div>
+    <div class="emoji">😉</div><div class="emoji">😌</div><div class="emoji">😍</div><div class="emoji">🥰</div>
+    <div class="emoji">😘</div><div class="emoji">😗</div><div class="emoji">😋</div><div class="emoji">😜</div>
+    <div class="emoji">😝</div><div class="emoji">🤪</div><div class="emoji">😎</div><div class="emoji">🤩</div>
+    <div class="emoji">😏</div><div class="emoji">😞</div><div class="emoji">😔</div><div class="emoji">😟</div>
+    <div class="emoji">😢</div><div class="emoji">😭</div><div class="emoji">😡</div><div class="emoji">🤬</div>
+    <div class="emoji">😱</div><div class="emoji">😳</div><div class="emoji">🤯</div><div class="emoji">🥵</div>
+    <div class="emoji">🥶</div><div class="emoji">😴</div><div class="emoji">🤤</div><div class="emoji">🤫</div>
+    <div class="emoji">🤭</div><div class="emoji">🤗</div><div class="emoji">🫂</div><div class="emoji">💪</div>
+    <div class="emoji">🙏</div><div class="emoji">💖</div><div class="emoji">✨</div><div class="emoji">🎉</div>
+
+    <!-- Gestures -->
+    <div class="emoji">👍</div><div class="emoji">👎</div><div class="emoji">👏</div><div class="emoji">🙌</div>
+    <div class="emoji">🤝</div><div class="emoji">✌️</div><div class="emoji">🤟</div><div class="emoji">👌</div>
+
+    <!-- Animals & Nature -->
+    <div class="emoji">🐶</div><div class="emoji">🐱</div><div class="emoji">🐭</div><div class="emoji">🐹</div>
+    <div class="emoji">🐰</div><div class="emoji">🦊</div><div class="emoji">🐻</div><div class="emoji">🐼</div>
+    <div class="emoji">🐨</div><div class="emoji">🐯</div><div class="emoji">🦁</div><div class="emoji">🐮</div>
+
+    <!-- Food & Drinks -->
+    <div class="emoji">🍏</div><div class="emoji">🍎</div><div class="emoji">🍊</div><div class="emoji">🍌</div>
+    <div class="emoji">🍉</div><div class="emoji">🍇</div><div class="emoji">🍓</div><div class="emoji">🍔</div>
+    <div class="emoji">🍕</div><div class="emoji">🍣</div><div class="emoji">🍩</div><div class="emoji">🍪</div>
+
+    <!-- Travel & Places -->
+    <div class="emoji">🏠</div><div class="emoji">🏡</div><div class="emoji">🏢</div><div class="emoji">🏫</div>
+    <div class="emoji">🗼</div><div class="emoji">🗽</div><div class="emoji">🌋</div><div class="emoji">🏖️</div>
+
+    <!-- Objects & Symbols -->
+    <div class="emoji">❤️</div><div class="emoji">💔</div><div class="emoji">💯</div><div class="emoji">🔥</div>
+    <div class="emoji">✨</div><div class="emoji">🎶</div><div class="emoji">⚡</div><div class="emoji">🌟</div>
+</div>
+
+
+@section scripts{
+    <script src="~/Scripts/jquery-3.6.0.min.js"></script>
+    <script src="~/Scripts/bootstrap.bundle.min.js"></script>
+    <script src="~/Scripts/jquery.signalR-2.4.2.min.js"></script>
+    <script src="~/signalr/hubs"></script>
+    <script>
+        $(function () {
+           /* =================== TABS =================== */ $(".tabs li").click(function () { $(".tabs li").removeClass("active"); $(this).addClass("active"); var id = $(this).data("active-tab"); $(".tab_container").removeClass("active"); $("#" + id).addClass("active"); if (id === "tab_2" && !$("#tab_2").data("loaded")) $("#tab_2").load("/Quiz/Game", () => { $("#tab_2").data("loaded", true); if (typeof initGame === "function") initGame(); }); if (id === "tab_3" && !$("#tab_3").data("loaded")) $("#tab_3").load("/QuestionDiSan/Gameflip", () => { $("#tab_3").data("loaded", true); if (typeof initGameFlip === "function") initGameFlip(); }); if (id === "tab_4" && !$("#tab_4").data("loaded")) $("#tab_4").load("/QuestionDiSan/GameImg", () => { $("#tab_4").data("loaded", true); if (typeof initGameImg === "function") initGameImg(); }); });
+
+            // ========== Media preview ==========
+            var selectedFiles = [];
+            $("#btnImage").click(() => $("#mediaInput").attr("accept", "image/*").click());
+            $("#btnVideo").click(() => $("#mediaInput").attr("accept", "video/*").click());
+            $("#mediaInput").on("change", function () {
+                var files = Array.from(this.files); files.forEach(f => selectedFiles.push(f)); this.value = "";
+                var $preview = $("#previewMedia").empty();
+                selectedFiles.forEach((f, i) => {
+                    var ext = f.name.split('.').pop().toLowerCase();
+                    var wrapper = $("<div class='preview-wrapper' style='position:relative;'>");
+                    var mediaEl;
+                    if (["jpg", "jpeg", "png", "gif", "webp"].includes(ext)) mediaEl = $("<img>").attr("src", URL.createObjectURL(f)).css({ width: "100%", borderRadius: "6px" });
+                    else if (["mp4", "webm", "ogg", "mov"].includes(ext)) mediaEl = $("<video controls>").attr("src", URL.createObjectURL(f)).css({ width: "100%", borderRadius: "6px" });
+                    wrapper.append(mediaEl);
+                    var removeBtn = $("<button type='button' style='position:absolute;top:4px;right:4px;background:red;color:white;border:none;border-radius:50%;width:20px;height:20px;cursor:pointer;'>×</button>");
+                    removeBtn.click(() => { selectedFiles.splice(i, 1); wrapper.remove(); });
+                    wrapper.append(removeBtn); $preview.append(wrapper);
+                });
+            });
+
+            // ========== Emoji ==========
+            var $picker = $("#globalEmojiPicker"), $btnEmoji = $("#btnEmoji"), $postContent = $("#postContent");
+            function openPicker() { var o = $btnEmoji.offset(); $picker.css({ top: o.top + $btnEmoji.outerHeight() + 8, left: o.left, display: "flex" }); }
+            function closePicker() { $picker.hide(); }
+            $btnEmoji.on("click", e => { e.stopPropagation(); $picker.is(":visible") ? closePicker() : openPicker(); });
+            $picker.on("click", ".emoji", function () { $postContent.val($postContent.val() + $(this).text()).focus(); });
+            $(document).on("click", e => { if (!$(e.target).closest("#globalEmojiPicker,#btnEmoji").length) closePicker(); });
+            $(document).on("click", ".emoji-small", function () { var $input = $(this).closest(".comment-box").find("input[name='content']").first(); if ($input.length) $input.val($input.val() + $(this).text()).focus(); });
+
+            // ========== Edit/Delete ==========
+            var curAction = "", curPost = 0;
+            $(document).on("click", ".edit-post,.delete-post", function (e) {
+                e.preventDefault(); curPost = $(this).data("id"); curAction = $(this).hasClass("edit-post") ? "edit" : "delete";
+                $("#postPassword").val(''); $("#passwordModal").modal("show");
+            });
+            $("#confirmAction").click(function () {
+                var pass = $("#postPassword").val(); if (!pass) { alert("Vui lòng nhập mật khẩu!"); return; }
+                if (curAction === "edit") { window.location.href = "/Community/EditPost?id=" + curPost + "&password=" + encodeURIComponent(pass); }
+                else { $.post("/Community/DeletePost", { id: curPost, password: pass }, res => { if (res.success) location.reload(); else alert("Mật khẩu sai hoặc xóa thất bại!"); }).fail(() => alert("Có lỗi khi xóa bài.")); }
+                $("#passwordModal").modal("hide");
+            });
+
+            // ========== SignalR ==========
+            try { var hub = $.connection.communityHub; hub.client.updatePosts = function () { location.reload(); }; hub.client.updateComments = function () { location.reload(); }; $.connection.hub.start(); } catch (e) { console.warn("SignalR lỗi:", e); }
+
+            // ========== Auto-resize textarea ==========
+            $postContent.on("input", function () { this.style.height = 'auto'; this.style.height = this.scrollHeight + 'px'; });
+            $(document).on("input", ".comment-input", function () { this.style.height = 'auto'; this.style.height = this.scrollHeight + 'px'; });
+
+            // ========== Approval popup + AJAX submit ==========
+            var form = document.getElementById("createPostForm"), popup = document.getElementById("approvalPopup"), okBtn = document.getElementById("popupOkBtn");
+            $("#btnSubmitPost").click(function (e) {
+                e.preventDefault(); popup.style.display = "block";
+                okBtn.addEventListener("click", function () {
+                    popup.style.display = "none"; var fd = new FormData(form); selectedFiles.forEach(f => fd.append('media', f));
+                    $.ajax({ url: form.action, method: form.method, data: fd, processData: false, contentType: false, success: function (res) { if (res.success) location.reload(); else alert(res.message || "Đăng bài thất bại!"); }, error: function () { alert("Có lỗi khi gửi bài."); } });
+                }, { once: true });
+            });
+
+            // ========== Lightbox ==========
+            let fbArr = [], fbIdx = 0;
+            function fbOpen(i) { if (!fbArr.length) return; fbIdx = i; const item = fbArr[i]; const box = $(".fb-lb-media"); box.empty(); if (item.type === "image") box.append(`<img src="${item.src}"/>`); else box.append(`<video src="${item.src}" controls autoplay></video>`); $("#mediaLightbox").fadeIn(150).addClass("show"); }
+            function fbClose() { $("#mediaLightbox").fadeOut(150, function () { $(".fb-lb-media").empty(); $(this).removeClass("show"); }); }
+            function fbPrev() { if (!fbArr.length) return; fbOpen((fbIdx - 1 + fbArr.length) % fbArr.length); }
+            function fbNext() { if (!fbArr.length) return; fbOpen((fbIdx + 1) % fbArr.length); }
+            $(document).on("click", ".fb-lb-close", fbClose);
+            $(document).on("click", "#mediaLightbox", function (e) { if (e.target.id === "mediaLightbox") fbClose(); });
+            $(document).on("click", ".fb-lb-prev", fbPrev);
+            $(document).on("click", ".fb-lb-next", fbNext);
+            $(document).on("click", ".media-item", function () {
+                const postId = $(this).data("post"); fbArr = []; $(`.media-item[data-post='${postId}']`).each(function () { const type = $(this).data("type") || "image"; const src = $(this).data("src") || ""; if (src) fbArr.push({ src, type }); });
+                const idx = $(`.media-item[data-post='${postId}']`).index(this); if (fbArr.length && idx >= 0) fbOpen(idx);
+            });
+
+        });
+    </script>
+}
