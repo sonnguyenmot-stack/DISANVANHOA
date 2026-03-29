@@ -3,83 +3,83 @@
   "WorkspaceRootPath": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\disanvanhoa\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|solutionrelative:disanvanhoa\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|c:\\users\\tieub\\desktop\\mvc_asp.net\\new folder\\disanvanhoa\\disanvanhoa\\disanvanhoa\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|solutionrelative:disanvanhoa\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|c:\\users\\tieub\\desktop\\mvc_asp.net\\new folder\\disanvanhoa\\disanvanhoa\\disanvanhoa\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\disanvanhoa\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|solutionrelative:disanvanhoa\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|c:\\users\\tieub\\desktop\\mvc_asp.net\\new folder\\disanvanhoa\\disanvanhoa\\disanvanhoa\\app_start\\startup.auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\disanvanhoa\\app_start\\startup.auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|solutionrelative:disanvanhoa\\app_start\\startup.auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|c:\\users\\tieub\\desktop\\mvc_asp.net\\new folder\\disanvanhoa\\disanvanhoa\\disanvanhoa\\areas\\admin\\adminarearegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\disanvanhoa\\areas\\admin\\adminarearegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|solutionrelative:disanvanhoa\\areas\\admin\\adminarearegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|c:\\users\\tieub\\desktop\\mvc_asp.net\\new folder\\disanvanhoa\\disanvanhoa\\disanvanhoa\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|solutionrelative:disanvanhoa\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|c:\\users\\tieub\\desktop\\mvc_asp.net\\new folder\\disanvanhoa\\disanvanhoa\\disanvanhoa\\views\\account\\resetpasswordconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\disanvanhoa\\views\\account\\resetpasswordconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|solutionrelative:disanvanhoa\\views\\account\\resetpasswordconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|c:\\users\\tieub\\desktop\\mvc_asp.net\\new folder\\disanvanhoa\\disanvanhoa\\disanvanhoa\\views\\account\\sendcode.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\disanvanhoa\\views\\account\\sendcode.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|solutionrelative:disanvanhoa\\views\\account\\sendcode.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|c:\\users\\tieub\\desktop\\mvc_asp.net\\new folder\\disanvanhoa\\disanvanhoa\\disanvanhoa\\views\\account\\verifycode.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\disanvanhoa\\views\\account\\verifycode.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|solutionrelative:disanvanhoa\\views\\account\\verifycode.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|c:\\users\\tieub\\desktop\\mvc_asp.net\\new folder\\disanvanhoa\\disanvanhoa\\disanvanhoa\\views\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\disanvanhoa\\views\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|solutionrelative:disanvanhoa\\views\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|c:\\users\\tieub\\desktop\\mvc_asp.net\\new folder\\disanvanhoa\\disanvanhoa\\disanvanhoa\\views\\shared\\_layoutresetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\disanvanhoa\\views\\shared\\_layoutresetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|solutionrelative:disanvanhoa\\views\\shared\\_layoutresetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|c:\\users\\tieub\\desktop\\mvc_asp.net\\new folder\\disanvanhoa\\disanvanhoa\\disanvanhoa\\views\\shared\\_layoutregister.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\disanvanhoa\\views\\shared\\_layoutregister.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|solutionrelative:disanvanhoa\\views\\shared\\_layoutregister.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|c:\\users\\tieub\\desktop\\mvc_asp.net\\new folder\\disanvanhoa\\disanvanhoa\\disanvanhoa\\views\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\disanvanhoa\\views\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|solutionrelative:disanvanhoa\\views\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|c:\\users\\tieub\\desktop\\mvc_asp.net\\new folder\\disanvanhoa\\disanvanhoa\\disanvanhoa\\areas\\admin\\views\\role\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\disanvanhoa\\areas\\admin\\views\\role\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|solutionrelative:disanvanhoa\\areas\\admin\\views\\role\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|c:\\users\\tieub\\desktop\\mvc_asp.net\\new folder\\disanvanhoa\\disanvanhoa\\disanvanhoa\\areas\\admin\\views\\role\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\disanvanhoa\\areas\\admin\\views\\role\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|solutionrelative:disanvanhoa\\areas\\admin\\views\\role\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|c:\\users\\tieub\\desktop\\mvc_asp.net\\new folder\\disanvanhoa\\disanvanhoa\\disanvanhoa\\areas\\admin\\views\\account\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\disanvanhoa\\areas\\admin\\views\\account\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|solutionrelative:disanvanhoa\\areas\\admin\\views\\account\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|c:\\users\\tieub\\desktop\\mvc_asp.net\\new folder\\disanvanhoa\\disanvanhoa\\disanvanhoa\\areas\\admin\\views\\account\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\disanvanhoa\\areas\\admin\\views\\account\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|solutionrelative:disanvanhoa\\areas\\admin\\views\\account\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|c:\\users\\tieub\\desktop\\mvc_asp.net\\new folder\\disanvanhoa\\disanvanhoa\\disanvanhoa\\areas\\admin\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\disanvanhoa\\areas\\admin\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|solutionrelative:disanvanhoa\\areas\\admin\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|c:\\users\\tieub\\desktop\\mvc_asp.net\\new folder\\disanvanhoa\\disanvanhoa\\disanvanhoa\\areas\\admin\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\disanvanhoa\\areas\\admin\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|solutionrelative:disanvanhoa\\areas\\admin\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|c:\\users\\tieub\\desktop\\mvc_asp.net\\new folder\\disanvanhoa\\disanvanhoa\\disanvanhoa\\areas\\admin\\views\\account\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\disanvanhoa\\areas\\admin\\views\\account\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|solutionrelative:disanvanhoa\\areas\\admin\\views\\account\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|c:\\users\\tieub\\desktop\\mvc_asp.net\\new folder\\disanvanhoa\\disanvanhoa\\disanvanhoa\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\disanvanhoa\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5DAF506F-E814-4108-A06F-BE9AFF58C0F7}|DISANVANHOA\\DISANVANHOA.csproj|solutionrelative:disanvanhoa\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -90,242 +90,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RouteConfig.cs",
-              "DocumentMoniker": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\App_Start\\RouteConfig.cs",
-              "RelativeDocumentMoniker": "DISANVANHOA\\App_Start\\RouteConfig.cs",
-              "ToolTip": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\App_Start\\RouteConfig.cs",
-              "RelativeToolTip": "DISANVANHOA\\App_Start\\RouteConfig.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T14:14:06.82Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Startup.Auth.cs",
-              "DocumentMoniker": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\App_Start\\Startup.Auth.cs",
-              "RelativeDocumentMoniker": "DISANVANHOA\\App_Start\\Startup.Auth.cs",
-              "ToolTip": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\App_Start\\Startup.Auth.cs",
-              "RelativeToolTip": "DISANVANHOA\\App_Start\\Startup.Auth.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T14:14:05.135Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AdminAreaRegistration.cs",
-              "DocumentMoniker": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Areas\\Admin\\AdminAreaRegistration.cs",
-              "RelativeDocumentMoniker": "DISANVANHOA\\Areas\\Admin\\AdminAreaRegistration.cs",
-              "ToolTip": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Areas\\Admin\\AdminAreaRegistration.cs",
-              "RelativeToolTip": "DISANVANHOA\\Areas\\Admin\\AdminAreaRegistration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T14:12:13.242Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Web.config",
-              "DocumentMoniker": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Web.config",
-              "RelativeDocumentMoniker": "DISANVANHOA\\Web.config",
-              "ToolTip": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Web.config",
-              "RelativeToolTip": "DISANVANHOA\\Web.config",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2026-03-25T14:10:10.691Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SendCode.cshtml",
-              "DocumentMoniker": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Views\\Account\\SendCode.cshtml",
-              "RelativeDocumentMoniker": "DISANVANHOA\\Views\\Account\\SendCode.cshtml",
-              "ToolTip": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Views\\Account\\SendCode.cshtml",
-              "RelativeToolTip": "DISANVANHOA\\Views\\Account\\SendCode.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-25T14:06:05.508Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ResetPasswordConfirmation.cshtml",
-              "DocumentMoniker": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Views\\Account\\ResetPasswordConfirmation.cshtml",
-              "RelativeDocumentMoniker": "DISANVANHOA\\Views\\Account\\ResetPasswordConfirmation.cshtml",
-              "ToolTip": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Views\\Account\\ResetPasswordConfirmation.cshtml",
-              "RelativeToolTip": "DISANVANHOA\\Views\\Account\\ResetPasswordConfirmation.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAYwCEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-25T14:05:36.918Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "DISANVANHOA\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "DISANVANHOA\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAAAHIAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-25T13:20:42.838Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "VerifyCode.cshtml",
-              "DocumentMoniker": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Views\\Account\\VerifyCode.cshtml",
-              "RelativeDocumentMoniker": "DISANVANHOA\\Views\\Account\\VerifyCode.cshtml",
-              "ToolTip": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Views\\Account\\VerifyCode.cshtml",
-              "RelativeToolTip": "DISANVANHOA\\Views\\Account\\VerifyCode.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-25T14:06:11.439Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "_LayoutRegister.cshtml",
-              "DocumentMoniker": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Views\\Shared\\_LayoutRegister.cshtml",
-              "RelativeDocumentMoniker": "DISANVANHOA\\Views\\Shared\\_LayoutRegister.cshtml",
-              "ToolTip": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Views\\Shared\\_LayoutRegister.cshtml",
-              "RelativeToolTip": "DISANVANHOA\\Views\\Shared\\_LayoutRegister.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-25T13:58:31.643Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "_LayoutResetPassword.cshtml",
-              "DocumentMoniker": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Views\\Shared\\_LayoutResetPassword.cshtml",
-              "RelativeDocumentMoniker": "DISANVANHOA\\Views\\Shared\\_LayoutResetPassword.cshtml",
-              "ToolTip": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Views\\Shared\\_LayoutResetPassword.cshtml",
-              "RelativeToolTip": "DISANVANHOA\\Views\\Shared\\_LayoutResetPassword.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-25T13:57:36.959Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ResetPassword.cshtml",
-              "DocumentMoniker": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Views\\Account\\ResetPassword.cshtml",
-              "RelativeDocumentMoniker": "DISANVANHOA\\Views\\Account\\ResetPassword.cshtml",
-              "ToolTip": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Views\\Account\\ResetPassword.cshtml",
-              "RelativeToolTip": "DISANVANHOA\\Views\\Account\\ResetPassword.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-25T13:56:50.981Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ForgotPassword.cshtml",
-              "DocumentMoniker": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Views\\Account\\ForgotPassword.cshtml",
-              "RelativeDocumentMoniker": "DISANVANHOA\\Views\\Account\\ForgotPassword.cshtml",
-              "ToolTip": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Views\\Account\\ForgotPassword.cshtml",
-              "RelativeToolTip": "DISANVANHOA\\Views\\Account\\ForgotPassword.cshtml",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAYwCkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-25T13:54:38.37Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Areas\\Admin\\Views\\Role\\Create.cshtml",
-              "RelativeDocumentMoniker": "DISANVANHOA\\Areas\\Admin\\Views\\Role\\Create.cshtml",
-              "ToolTip": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Areas\\Admin\\Views\\Role\\Create.cshtml",
-              "RelativeToolTip": "DISANVANHOA\\Areas\\Admin\\Views\\Role\\Create.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAYwDYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-25T13:49:05.023Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Areas\\Admin\\Views\\Role\\Index.cshtml",
-              "RelativeDocumentMoniker": "DISANVANHOA\\Areas\\Admin\\Views\\Role\\Index.cshtml",
-              "ToolTip": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Areas\\Admin\\Views\\Role\\Index.cshtml",
-              "RelativeToolTip": "DISANVANHOA\\Areas\\Admin\\Views\\Role\\Index.cshtml",
-              "ViewState": "AgIAACoAAAAAAAAAAAAYwDkAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-25T13:46:28.844Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Areas\\Admin\\Views\\Account\\Edit.cshtml",
-              "RelativeDocumentMoniker": "DISANVANHOA\\Areas\\Admin\\Views\\Account\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Areas\\Admin\\Views\\Account\\Edit.cshtml",
-              "RelativeToolTip": "DISANVANHOA\\Areas\\Admin\\Views\\Account\\Edit.cshtml",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAUwHIAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-25T13:38:21.991Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Areas\\Admin\\Views\\Account\\Create.cshtml",
-              "RelativeDocumentMoniker": "DISANVANHOA\\Areas\\Admin\\Views\\Account\\Create.cshtml",
-              "ToolTip": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Areas\\Admin\\Views\\Account\\Create.cshtml",
-              "RelativeToolTip": "DISANVANHOA\\Areas\\Admin\\Views\\Account\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-25T13:36:17.003Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Areas\\Admin\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "DISANVANHOA\\Areas\\Admin\\Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Areas\\Admin\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "DISANVANHOA\\Areas\\Admin\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-25T13:32:51.041Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Areas\\Admin\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "DISANVANHOA\\Areas\\Admin\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Areas\\Admin\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "DISANVANHOA\\Areas\\Admin\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAwwG4AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T13:27:23.677Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -344,6 +110,224 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "DISANVANHOA\\App_Start\\RouteConfig.cs",
+              "ToolTip": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "DISANVANHOA\\App_Start\\RouteConfig.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T14:14:06.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Startup.Auth.cs",
+              "DocumentMoniker": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\App_Start\\Startup.Auth.cs",
+              "RelativeDocumentMoniker": "DISANVANHOA\\App_Start\\Startup.Auth.cs",
+              "ToolTip": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\App_Start\\Startup.Auth.cs",
+              "RelativeToolTip": "DISANVANHOA\\App_Start\\Startup.Auth.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T14:14:05.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdminAreaRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Areas\\Admin\\AdminAreaRegistration.cs",
+              "RelativeDocumentMoniker": "DISANVANHOA\\Areas\\Admin\\AdminAreaRegistration.cs",
+              "ToolTip": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Areas\\Admin\\AdminAreaRegistration.cs",
+              "RelativeToolTip": "DISANVANHOA\\Areas\\Admin\\AdminAreaRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T14:12:13.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Web.config",
+              "RelativeDocumentMoniker": "DISANVANHOA\\Web.config",
+              "ToolTip": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Web.config",
+              "RelativeToolTip": "DISANVANHOA\\Web.config",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-03-25T14:10:10.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SendCode.cshtml",
+              "DocumentMoniker": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Views\\Account\\SendCode.cshtml",
+              "RelativeDocumentMoniker": "DISANVANHOA\\Views\\Account\\SendCode.cshtml",
+              "ToolTip": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Views\\Account\\SendCode.cshtml",
+              "RelativeToolTip": "DISANVANHOA\\Views\\Account\\SendCode.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-25T14:06:05.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ResetPasswordConfirmation.cshtml",
+              "DocumentMoniker": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Views\\Account\\ResetPasswordConfirmation.cshtml",
+              "RelativeDocumentMoniker": "DISANVANHOA\\Views\\Account\\ResetPasswordConfirmation.cshtml",
+              "ToolTip": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Views\\Account\\ResetPasswordConfirmation.cshtml",
+              "RelativeToolTip": "DISANVANHOA\\Views\\Account\\ResetPasswordConfirmation.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-25T14:05:36.918Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "DISANVANHOA\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "DISANVANHOA\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-25T13:20:42.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "VerifyCode.cshtml",
+              "DocumentMoniker": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Views\\Account\\VerifyCode.cshtml",
+              "RelativeDocumentMoniker": "DISANVANHOA\\Views\\Account\\VerifyCode.cshtml",
+              "ToolTip": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Views\\Account\\VerifyCode.cshtml",
+              "RelativeToolTip": "DISANVANHOA\\Views\\Account\\VerifyCode.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-25T14:06:11.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_LayoutRegister.cshtml",
+              "DocumentMoniker": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Views\\Shared\\_LayoutRegister.cshtml",
+              "RelativeDocumentMoniker": "DISANVANHOA\\Views\\Shared\\_LayoutRegister.cshtml",
+              "ToolTip": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Views\\Shared\\_LayoutRegister.cshtml",
+              "RelativeToolTip": "DISANVANHOA\\Views\\Shared\\_LayoutRegister.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-25T13:58:31.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_LayoutResetPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Views\\Shared\\_LayoutResetPassword.cshtml",
+              "RelativeDocumentMoniker": "DISANVANHOA\\Views\\Shared\\_LayoutResetPassword.cshtml",
+              "ToolTip": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Views\\Shared\\_LayoutResetPassword.cshtml",
+              "RelativeToolTip": "DISANVANHOA\\Views\\Shared\\_LayoutResetPassword.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-25T13:57:36.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ResetPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Views\\Account\\ResetPassword.cshtml",
+              "RelativeDocumentMoniker": "DISANVANHOA\\Views\\Account\\ResetPassword.cshtml",
+              "ToolTip": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Views\\Account\\ResetPassword.cshtml",
+              "RelativeToolTip": "DISANVANHOA\\Views\\Account\\ResetPassword.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-25T13:56:50.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ForgotPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Views\\Account\\ForgotPassword.cshtml",
+              "RelativeDocumentMoniker": "DISANVANHOA\\Views\\Account\\ForgotPassword.cshtml",
+              "ToolTip": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Views\\Account\\ForgotPassword.cshtml",
+              "RelativeToolTip": "DISANVANHOA\\Views\\Account\\ForgotPassword.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAYwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-25T13:54:38.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Areas\\Admin\\Views\\Role\\Create.cshtml",
+              "RelativeDocumentMoniker": "DISANVANHOA\\Areas\\Admin\\Views\\Role\\Create.cshtml",
+              "ToolTip": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Areas\\Admin\\Views\\Role\\Create.cshtml",
+              "RelativeToolTip": "DISANVANHOA\\Areas\\Admin\\Views\\Role\\Create.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-25T13:49:05.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Areas\\Admin\\Views\\Role\\Index.cshtml",
+              "RelativeDocumentMoniker": "DISANVANHOA\\Areas\\Admin\\Views\\Role\\Index.cshtml",
+              "ToolTip": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Areas\\Admin\\Views\\Role\\Index.cshtml",
+              "RelativeToolTip": "DISANVANHOA\\Areas\\Admin\\Views\\Role\\Index.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwDkAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-25T13:46:28.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Areas\\Admin\\Views\\Account\\Edit.cshtml",
+              "RelativeDocumentMoniker": "DISANVANHOA\\Areas\\Admin\\Views\\Account\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Areas\\Admin\\Views\\Account\\Edit.cshtml",
+              "RelativeToolTip": "DISANVANHOA\\Areas\\Admin\\Views\\Account\\Edit.cshtml",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAUwHIAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-25T13:38:21.991Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Areas\\Admin\\Views\\Account\\Create.cshtml",
+              "RelativeDocumentMoniker": "DISANVANHOA\\Areas\\Admin\\Views\\Account\\Create.cshtml",
+              "ToolTip": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Areas\\Admin\\Views\\Account\\Create.cshtml",
+              "RelativeToolTip": "DISANVANHOA\\Areas\\Admin\\Views\\Account\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-25T13:36:17.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Areas\\Admin\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "DISANVANHOA\\Areas\\Admin\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Areas\\Admin\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "DISANVANHOA\\Areas\\Admin\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-25T13:32:51.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Areas\\Admin\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "DISANVANHOA\\Areas\\Admin\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Areas\\Admin\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "DISANVANHOA\\Areas\\Admin\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAwwG4AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T13:27:23.677Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 18,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\tieub\\Desktop\\MVC_ASP.NET\\New folder\\DISANVANHOA\\DISANVANHOA\\DISANVANHOA\\Areas\\Admin\\Views\\Account\\Index.cshtml",
@@ -352,8 +336,7 @@
               "RelativeToolTip": "DISANVANHOA\\Areas\\Admin\\Views\\Account\\Index.cshtml",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAE0AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-25T13:30:32.729Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T13:30:32.729Z"
             },
             {
               "$type": "Document",
@@ -365,8 +348,7 @@
               "RelativeToolTip": "DISANVANHOA\\Controllers\\AccountController.cs",
               "ViewState": "AgIAAJMAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T13:10:45.284Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T13:10:45.284Z"
             }
           ]
         }
